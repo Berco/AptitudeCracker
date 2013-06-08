@@ -1,5 +1,7 @@
 package com.droidacid.apticalc;
 
+import com.droidacid.more.More;
+
 import android.app.Activity;
 import android.content.Intent;
 import android.os.Bundle;
@@ -9,7 +11,7 @@ import android.widget.Button;
 
 public class MainMenu extends Activity implements android.view.View.OnClickListener{
 	
-	Button bapticalc, bformulas, btipsntricks, btesturskills, babout;
+	Button bapticalc, bformulas, btipsntricks, btesturskills, bmore;
 	String tag = "Main Menu";
 	
 	@Override
@@ -17,11 +19,7 @@ public class MainMenu extends Activity implements android.view.View.OnClickListe
 		super.onCreate(savedInstanceState);
 		setContentView(R.layout.main_menu);
 		initialize();	
-		bapticalc.setOnClickListener(this);
-		btesturskills.setOnClickListener(this);
-		btipsntricks.setOnClickListener(this);
-		bformulas.setOnClickListener(this);
-		babout.setOnClickListener(this);
+		
 	}
 	
 	private void initialize(){
@@ -29,7 +27,13 @@ public class MainMenu extends Activity implements android.view.View.OnClickListe
 		btesturskills = (Button) findViewById(R.id.btesturskills);
 		btipsntricks = (Button) findViewById(R.id.btipsntricks);
 		bformulas = (Button) findViewById(R.id.bformulas);		
-		babout = (Button) findViewById(R.id.babout);
+		bmore = (Button) findViewById(R.id.babout);
+		
+		bapticalc.setOnClickListener(this);
+		btesturskills.setOnClickListener(this);
+		btipsntricks.setOnClickListener(this);
+		bformulas.setOnClickListener(this);
+		bmore.setOnClickListener(this);
 	}
 
 	@Override
@@ -59,8 +63,8 @@ public class MainMenu extends Activity implements android.view.View.OnClickListe
 			startActivity(Formulas);
 			Log.d(tag, "Inside formulas switch case");
 			break;
-		case R.id.babout:
-			Intent About = new Intent(this, About.class);
+		case R.id.bmore:
+			Intent About = new Intent(this, More.class);
 			startActivity(About);
 			Log.d(tag, "Inside about switch case");
 			break;

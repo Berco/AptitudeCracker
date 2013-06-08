@@ -14,7 +14,7 @@
         android:label="@string/app_name"
         android:theme="@style/AppTheme" >
 
-        <!-- ____________________________________________________________________________________ -->
+        <!-- __________________________________________________ -->
 
 
         <!-- Main menu intents -->
@@ -45,11 +45,11 @@
             android:label="@string/app_name" >
         </activity>
         <activity
-            android:name=".About"
+            android:name=".More"
             android:label="@string/app_name" >
         </activity>
 
-        <!-- ____________________________________________________________________________________ -->
+        <!-- _________________________________________________________________ -->
 
 
         <!-- Aptitude Intents -->
@@ -103,7 +103,7 @@
             android:label="@string/app_name" >
         </activity>
 
-        <!-- ____________________________________________________________________________________ -->
+        <!-- _________________________________________________________________ -->
 
 
         <!-- Formulas Intents Code -->
@@ -266,7 +266,7 @@
             android:name=".FVolumeSphere"
             android:label="@string/app_name" />
 
-        <!-- _____________Geometry Circle Properties____________________________ -->
+        <!-- _____________Geometry Circle Properties_____________________ -->
 
         <activity
             android:name=".FCircleProperties1"
@@ -284,7 +284,7 @@
             android:name=".FCircleProperties5"
             android:label="@string/app_name" />
 
-        <!-- _______________Geometry Triangle Properties_____________________________ -->
+        <!-- _______________Geometry Triangle Properties____________________ -->
 
         <activity
             android:name=".FTriangle1"
@@ -362,7 +362,32 @@
             android:label="@string/app_name" >
         </activity>
         
-        
-        
+      <!-- _____________________ More About This App __________________ -->  
+      
+      
+      <activity
+            android:name=".AboutUs"
+            android:label="@string/app_name" >
+        </activity>
+        <activity
+            android:name=".LikeUs"
+            android:label="@string/app_name" >
+        </activity>
+        <activity
+            android:name=".Report"
+            android:label="@string/app_name" >
+        </activity>
+        <activity
+            android:name=".Review"
+            android:label="@string/app_name" >
+        </activity>
+        <activity
+            android:name=".Suggest"
+            android:label="@string/app_name" >
+        </activity>
+        <activity
+            android:name=".Upgrade"
+            android:label="@string/app_name" >
+        </activity>
 </application>
 </manifest>

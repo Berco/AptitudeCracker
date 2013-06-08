@@ -39,7 +39,7 @@
         </LinearLayout>
 
         <Button
-            android:id="@+id/babout"
+            android:id="@+id/bmore"
             style="@style/ButtonStyle"
             android:layout_marginTop="50sp"
             android:text="@string/about"
