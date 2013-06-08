@@ -1,0 +1,82 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent" >
+
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical" >
+
+        <Button
+            android:id="@+id/bSqrscubes"
+            style="@style/ButtonStyle"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/squares_cubes_and_fractions" />
+
+        <Button
+            android:id="@+id/bDivisibility"
+            style="@style/ButtonStyle"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/divisibility_rule" />
+
+        <Button
+            android:id="@+id/bExponents"
+            style="@style/ButtonStyle"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/exponents_rule" />
+
+        <Button
+            android:id="@+id/bLogs"
+            style="@style/ButtonStyle"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/logarithms" />
+
+        <Button
+            android:id="@+id/bProgressions"
+            style="@style/ButtonStyle"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/progressions" />
+
+        <Button
+            android:id="@+id/bQuadraticeqs"
+            style="@style/ButtonStyle"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/quadratic_equations" />
+
+        <Button
+            android:id="@+id/bProbabilityPnC"
+            style="@style/ButtonStyle"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/probability_p_and_c" />
+
+        <Button
+            android:id="@+id/bGeometry"
+            style="@style/ButtonStyle"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/geometry" />
+
+        <Button
+            android:id="@+id/bCoOrdinateGeo"
+            style="@style/ButtonStyle"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/co_ordinate_geometry" />
+
+        <Button
+            android:id="@+id/bTrigonometry"
+            style="@style/ButtonStyle"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/trigonometry" />
+    </LinearLayout>
+
+</ScrollView>

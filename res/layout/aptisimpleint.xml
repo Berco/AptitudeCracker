@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:padding="10dp" >
+
+    <EditText
+        android:id="@+id/EtPrincipal"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="15dp"
+        android:ems="10"
+        android:hint="@string/EnterPrincipal"
+        android:inputType="number"
+        android:textSize="22sp" />
+
+    <EditText
+        android:id="@+id/EtRate"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:ems="10"
+        android:hint="@string/enterRate"
+        android:inputType="number"
+        android:textSize="22sp" />
+
+    <EditText
+        android:id="@+id/EtTime"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:ems="10"
+        android:hint="@string/entertime"
+        android:inputType="number"
+        android:textIsSelectable="false"
+        android:textSize="22sp" />
+
+    <TextView
+        android:id="@+id/TvAnswer"
+        style="@style/TVStyle"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="15dp"
+        android:textSize="22sp" />
+
+    <Button
+        android:id="@+id/bCalcSimpleInt"
+        style="@style/ButtonStyle"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="15dp"
+        android:text="@string/calc" />
+
+</LinearLayout>

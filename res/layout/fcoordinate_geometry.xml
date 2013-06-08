@@ -1,0 +1,68 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:ads="http://schemas.android.com/apk/lib/com.google.ads"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent" >
+
+    <RelativeLayout
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content" >
+
+        <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical" >
+
+            <Button
+                android:id="@+id/bLineEqn"
+                style="@style/ButtonStyle"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="30dp"
+                android:text="@string/line_equation" />
+
+            <Button
+                android:id="@+id/bLineDist"
+                style="@style/ButtonStyle"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:text="@string/line_distance" />
+
+            <Button
+                android:id="@+id/bLineMidPt"
+                style="@style/ButtonStyle"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:text="@string/line_midpoint" />
+
+            <Button
+                android:id="@+id/bLineSlope"
+                style="@style/ButtonStyle"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:text="@string/line_slope" />
+
+            <Button
+                android:id="@+id/bSlopeParallelLines"
+                style="@style/ButtonStyle"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:text="@string/slope_parallel_lines" />
+
+            <Button
+                android:id="@+id/bSlopePerLines"
+                style="@style/ButtonStyle"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:text="@string/slope_perpendicular_lines" />
+
+            <Button
+                android:id="@+id/bCircleEqn"
+                style="@style/ButtonStyle"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:text="@string/circle_equation" />
+        </LinearLayout>
+    </RelativeLayout>
+
+</ScrollView>

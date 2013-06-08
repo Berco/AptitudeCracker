@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent" >
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:padding="10dp"
+        android:orientation="vertical" >
+
+        <Button
+            android:id="@+id/bnumsys"
+            style="@style/ButtonStyle"
+            android:layout_marginTop="10dp"
+            android:text="@string/numsys" />
+
+        <Button
+            android:id="@+id/bpercent"
+            style="@style/ButtonStyle"
+            android:text="@string/percent" />
+
+        <Button
+            android:id="@+id/btimenwork"
+            style="@style/ButtonStyle"
+            android:text="@string/timenwork" />
+
+        <Button
+            android:id="@+id/btimendist"
+            style="@style/ButtonStyle"
+            android:text="@string/timendist" />
+
+        <Button
+            android:id="@+id/binterest"
+            style="@style/ButtonStyle"
+            android:text="@string/aptiInterest" />
+
+        <Button
+            android:id="@+id/bprofitnloss"
+            style="@style/ButtonStyle"
+            android:text="@string/profitnloss" />
+
+        <Button
+            android:id="@+id/blcmhcf"
+            style="@style/ButtonStyle"
+            android:text="@string/BLcmHcf" />
+    </LinearLayout>
+
+</ScrollView>

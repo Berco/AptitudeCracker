@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:padding="10dp" >
+
+    <RadioGroup
+        android:id="@+id/rgSelect"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal" >
+
+        <RadioButton
+            android:id="@+id/rbtwoperson"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:checked="true"
+            android:text="@string/twopersons" />
+
+        <RadioButton
+            android:id="@+id/rbthreeperson"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/threepersons" />
+    </RadioGroup>
+
+    <EditText
+        android:id="@+id/ETfirstperson"
+        style="@style/ETStyle"
+        android:hint="@string/timefirstperson"
+        android:inputType="number" >
+    </EditText>
+
+    <EditText
+        android:id="@+id/ETsecondperson"
+        style="@style/ETStyle"
+        android:hint="@string/timesecondperson"
+        android:inputType="number" />
+
+    <EditText
+        android:id="@+id/ETthirdperson"
+        style="@style/ETStyle"
+        android:hint="@string/timethirdperson"
+        android:inputType="number"
+        android:visibility="gone" />
+
+    <TextView
+        android:id="@+id/TVresult"
+        style="@style/ETStyle"
+        android:gravity="center"
+        android:textIsSelectable="true" />
+
+    <Button
+        android:id="@+id/bcalcWD"
+        style="@style/ButtonStyle"
+        android:text="@string/aptitimenwork" />
+
+</LinearLayout>

@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:padding="10dp" >
+
+    <EditText
+        android:id="@+id/EtLcm1"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="15dp"
+        android:ems="10"
+        android:hint="@string/Et1stnum"
+        android:inputType="number" />
+
+    <EditText
+        android:id="@+id/EtLcm2"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:layout_marginTop="15dp"
+        android:ems="10"
+        android:hint="@string/Et2ndnum"
+        android:inputType="number" />
+
+    <EditText
+        android:id="@+id/EtLcm3"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="15dp"
+        android:ems="10"
+        android:hint="@string/Et3rdnum"
+        android:inputType="number" />
+
+    <Button
+        android:id="@+id/BCalcLCM"
+        style="@style/ButtonStyle"
+        android:layout_width="match_parent"
+        android:layout_gravity="center"
+        android:layout_marginTop="30dp"
+        android:text="@string/calc" />
+
+</LinearLayout>

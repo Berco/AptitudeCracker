@@ -1,0 +1,368 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.droidacid.apticalc"
+    android:versionCode="1"
+    android:versionName="1.0" >
+
+    <uses-sdk
+        android:minSdkVersion="8"
+        android:targetSdkVersion="17" />
+
+    <application
+        android:allowBackup="true"
+        android:icon="@drawable/ic_launcher"
+        android:label="@string/app_name"
+        android:theme="@style/AppTheme" >
+
+        <!-- ____________________________________________________________________________________ -->
+
+
+        <!-- Main menu intents -->
+
+        <activity
+            android:name=".MainMenu"
+            android:label="@string/app_name" >
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name=".AptiCalc"
+            android:label="@string/app_name" >
+        </activity>
+        <activity
+            android:name=".TYSMain"
+            android:label="@string/app_name" >
+        </activity>
+        <activity
+            android:name=".TipsNTricks"
+            android:label="@string/app_name" >
+        </activity>
+        <activity
+            android:name=".Formulas"
+            android:label="@string/app_name" >
+        </activity>
+        <activity
+            android:name=".About"
+            android:label="@string/app_name" >
+        </activity>
+
+        <!-- ____________________________________________________________________________________ -->
+
+
+        <!-- Aptitude Intents -->
+
+        <activity
+            android:name=".AptiNumSys"
+            android:label="@string/app_name" >
+        </activity>
+        <activity
+            android:name=".AptiPercent"
+            android:label="@string/app_name" >
+        </activity>
+        <activity
+            android:name=".AptiPerValue"
+            android:label="@string/app_name" >
+        </activity>
+        <activity
+            android:name=".AptiTimeNWork"
+            android:label="@string/app_name" >
+        </activity>
+        <activity
+            android:name=".AptiTimeDist"
+            android:label="@string/app_name" >
+        </activity>
+        <activity
+            android:name=".AptiInterest"
+            android:label="@string/app_name" >
+        </activity>
+        <activity
+            android:name=".AptiSimpleInt"
+            android:label="@string/app_name" >
+        </activity>
+        <activity
+            android:name=".AptiCompoundInt"
+            android:label="@string/app_name" >
+        </activity>
+        <activity
+            android:name=".AptiLcmHcf"
+            android:label="@string/app_name" >
+        </activity>
+        <activity
+            android:name=".AptiLcm"
+            android:label="@string/app_name" >
+        </activity>
+        <activity
+            android:name=".AptiHcf"
+            android:label="@string/app_name" >
+        </activity>
+        <activity
+            android:name=".TnTricksNumSys"
+            android:label="@string/app_name" >
+        </activity>
+
+        <!-- ____________________________________________________________________________________ -->
+
+
+        <!-- Formulas Intents Code -->
+
+        <activity
+            android:name=".FSquaresCubesFractions"
+            android:label="@string/app_name" >
+        </activity>
+        <activity
+            android:name=".FDivisibilityRule"
+            android:label="@string/app_name" >
+        </activity>
+        <activity
+            android:name=".FExponents"
+            android:label="@string/app_name" >
+        </activity>
+        <activity
+            android:name=".FLogarithms"
+            android:label="@string/app_name" >
+        </activity>
+        <activity
+            android:name=".FProgressions"
+            android:label="@string/app_name" >
+        </activity>
+        <activity
+            android:name=".FQuadratic"
+            android:label="@string/app_name" >
+        </activity>
+        <activity
+            android:name=".FProbabilityPandC"
+            android:label="@string/app_name" >
+        </activity>
+        <activity
+            android:name=".FGeometry"
+            android:label="@string/app_name" >
+        </activity>
+        <activity
+            android:name=".FCoordinateGeometry"
+            android:label="@string/app_name" >
+        </activity>
+        <activity
+            android:name=".FTrigonometry"
+            android:label="@string/app_name" >
+        </activity>
+
+        <!-- ________________Squares, Cubes, Decimals______________________ -->
+
+        <activity
+            android:name=".FSquares"
+            android:label="@string/app_name" >
+        </activity>
+        <activity
+            android:name=".FCubes"
+            android:label="@string/app_name" >
+        </activity>
+        <activity
+            android:name=".FDecimals"
+            android:label="@string/app_name" >
+        </activity>
+        <activity
+            android:name=".FProbability"
+            android:label="@string/app_name" />
+        <activity
+            android:name=".FBinomial"
+            android:label="@string/app_name" />
+        <activity
+            android:name=".FCount"
+            android:label="@string/app_name" />
+        <activity
+            android:name=".FGeometryFundamentals"
+            android:label="@string/app_name" />
+        <activity
+            android:name=".FAreasAndPerimeters"
+            android:label="@string/app_name" />
+        <activity
+            android:name=".FVolumeAndSurfaceAreas"
+            android:label="@string/app_name" />
+        <activity
+            android:name=".FCircleProperties"
+            android:label="@string/app_name" />
+        <activity
+            android:name=".FTriangleProperties"
+            android:label="@string/app_name" />
+        <activity
+            android:name=".FQuadrilateralProperties"
+            android:label="@string/app_name" />
+        <activity
+            android:name=".FPentagonProperties"
+            android:label="@string/app_name" />
+
+        <!-- _______________Geometry Geometry Fundamentals__________________ -->
+
+        <activity
+            android:name=".FGeometry1"
+            android:label="@string/app_name" >
+        </activity>
+        <activity
+            android:name=".FGeometry2"
+            android:label="@string/app_name" >
+        </activity>
+        <activity
+            android:name=".FGeometry3"
+            android:label="@string/app_name" >
+        </activity>
+        <activity
+            android:name=".FGeometry4"
+            android:label="@string/app_name" />
+        <activity
+            android:name=".FGeometry5"
+            android:label="@string/app_name" />
+
+        <!-- ________________Geometry Area_____________________ -->
+
+        <activity
+            android:name=".FAreaCircle"
+            android:label="@string/app_name" />
+        <activity
+            android:name=".FAreaTriangle"
+            android:label="@string/app_name" />
+        <activity
+            android:name=".FAreaEquilateralTriangle"
+            android:label="@string/app_name" />
+        <activity
+            android:name=".FAreaSquare"
+            android:label="@string/app_name" />
+        <activity
+            android:name=".FAreaRectangle"
+            android:label="@string/app_name" />
+        <activity
+            android:name=".FAreaParallogram"
+            android:label="@string/app_name" />
+        <activity
+            android:name=".FAreaRing"
+            android:label="@string/app_name" />
+        <activity
+            android:name=".FAreaSector"
+            android:label="@string/app_name" />
+        <activity
+            android:name=".FAreaTrapezoid"
+            android:label="@string/app_name" />
+
+        <!-- _______________Geometry Volume_______________________ -->
+
+        <activity
+            android:name=".FVolumeCone"
+            android:label="@string/app_name" />
+        <activity
+            android:name=".FVolumeCube"
+            android:label="@string/app_name" />
+        <activity
+            android:name=".FVolumeCylinder"
+            android:label="@string/app_name" />
+        <activity
+            android:name=".FVolumeFrustum"
+            android:label="@string/app_name" />
+        <activity
+            android:name=".FVolumePyramid"
+            android:label="@string/app_name" />
+        <activity
+            android:name=".FVolumeSphere"
+            android:label="@string/app_name" />
+
+        <!-- _____________Geometry Circle Properties____________________________ -->
+
+        <activity
+            android:name=".FCircleProperties1"
+            android:label="@string/app_name" />
+        <activity
+            android:name=".FCircleProperties2"
+            android:label="@string/app_name" />
+        <activity
+            android:name=".FCircleProperties3"
+            android:label="@string/app_name" />
+        <activity
+            android:name=".FCircleProperties4"
+            android:label="@string/app_name" />
+        <activity
+            android:name=".FCircleProperties5"
+            android:label="@string/app_name" />
+
+        <!-- _______________Geometry Triangle Properties_____________________________ -->
+
+        <activity
+            android:name=".FTriangle1"
+            android:label="@string/app_name" />
+        <activity
+            android:name=".FTriangle2"
+            android:label="@string/app_name" />
+        <activity
+            android:name=".FTriangle3"
+            android:label="@string/app_name" />
+        <activity
+            android:name=".FTriangle4"
+            android:label="@string/app_name" />
+        <activity
+            android:name=".FTriangle5"
+            android:label="@string/app_name" />
+        <activity
+            android:name=".FTriangle6"
+            android:label="@string/app_name" />
+        <activity
+            android:name=".FTriangle7"
+            android:label="@string/app_name" />
+        <activity
+            android:name=".FTriangle8"
+            android:label="@string/app_name" />
+        <activity
+            android:name=".FTriangle9"
+            android:label="@string/app_name" />
+    
+    
+    <!-- ___________CoOrdinate Geometry____________ -->
+    
+    <activity
+            android:name=".FLineEquation"
+            android:label="@string/app_name" />
+        <activity
+            android:name=".FLineDistance"
+            android:label="@string/app_name" />
+        <activity
+            android:name=".FLineMidpoint"
+            android:label="@string/app_name" />
+        <activity
+            android:name=".FLineSlope"
+            android:label="@string/app_name" />
+        <activity
+            android:name=".FSlopeParallelLines"
+            android:label="@string/app_name" />
+        <activity
+            android:name=".FSlopePerpendicularLines"
+            android:label="@string/app_name" />
+        <activity
+            android:name=".FCircleEquation"
+            android:label="@string/app_name" />
+        
+        <!-- _______Trinometry_________ -->
+        
+        <activity
+            android:name=".FTrigonometryBasics"
+            android:label="@string/app_name" >
+        </activity>
+        <activity
+            android:name=".FTrigonometryCommonAngles"
+            android:label="@string/app_name" >
+        </activity>
+        <activity
+            android:name=".FTrigonometryPeriodicFormulas"
+            android:label="@string/app_name" >
+        </activity>
+        <activity
+            android:name=".FTrigonometryPythagorean"
+            android:label="@string/app_name" >
+        </activity>
+        <activity
+            android:name=".FHalfAngleFormulas"
+            android:label="@string/app_name" >
+        </activity>
+        
+        
+        
+</application>
+</manifest>

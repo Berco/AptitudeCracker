@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent" >
+
+    <RelativeLayout
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content" >
+
+        <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical" >
+
+            <Button
+                android:id="@+id/bGeoFund"
+                style="@style/ButtonStyle"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:text="@string/geometry_fundamentals" />
+
+            <Button
+                android:id="@+id/bAreaNPeri"
+                style="@style/ButtonStyle"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:text="@string/areas_and_perimeters" />
+
+            <Button
+                android:id="@+id/bVolNSurf"
+                style="@style/ButtonStyle"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:text="@string/volumes_and_surface_areas" />
+
+            <Button
+                android:id="@+id/bCircleProp"
+                style="@style/ButtonStyle"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:text="@string/circle_properties" />
+
+            <Button
+                android:id="@+id/bTriProp"
+                style="@style/ButtonStyle"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:text="@string/triangle_properties" />
+
+            <Button
+                android:id="@+id/bQuadProp"
+                style="@style/ButtonStyle"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:text="@string/quadrilateral_properties" />
+
+            <Button
+                android:id="@+id/bPentProp"
+                style="@style/ButtonStyle"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:text="@string/pentagon_properties" />
+        </LinearLayout>
+    </RelativeLayout>
+
+</ScrollView>

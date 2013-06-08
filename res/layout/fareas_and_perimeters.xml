@@ -1,0 +1,81 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent" >
+
+    <RelativeLayout
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content" >
+
+        <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical" >
+
+            <Button
+                android:id="@+id/bCircle"
+                style="@style/ButtonStyle"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:text="@string/circle" />
+
+            <Button
+                android:id="@+id/bTriangle"
+                style="@style/ButtonStyle"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:text="@string/triangle" />
+
+            <Button
+                android:id="@+id/bEquiTri"
+                style="@style/ButtonStyle"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:text="@string/equilateral_triangle" />
+
+            <Button
+                android:id="@+id/bSquare"
+                style="@style/ButtonStyle"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:text="@string/square" />
+
+            <Button
+                android:id="@+id/bRectangle"
+                style="@style/ButtonStyle"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:text="@string/rectangle" />
+
+            <Button
+                android:id="@+id/bParallel"
+                style="@style/ButtonStyle"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:text="@string/parallelogram" />
+
+            <Button
+                android:id="@+id/bRing"
+                style="@style/ButtonStyle"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:text="@string/ring" />
+
+            <Button
+                android:id="@+id/bSector"
+                style="@style/ButtonStyle"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:text="@string/sector" />
+
+            <Button
+                android:id="@+id/bTrapezoid"
+                style="@style/ButtonStyle"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:text="@string/trapezoid" />
+        </LinearLayout>
+    </RelativeLayout>
+
+</ScrollView>

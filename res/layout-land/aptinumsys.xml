@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical" >
+
+    <EditText
+        android:id="@+id/number1"
+        style="@style/ETStyle"
+        android:hint="@string/num1hint"
+        android:inputType="number" >
+    </EditText>
+
+    <EditText
+        android:id="@+id/number2"
+        style="@style/ETStyle"
+        android:hint="@string/num2hint"
+        android:inputType="number" />
+
+    <TextView
+        android:id="@+id/output"
+        style="@style/TVStyle"
+        android:gravity="center"
+        android:textIsSelectable="true" />
+
+    <Button
+        android:id="@+id/badd"
+        style="@style/ButtonStyle"
+        android:layout_marginTop="20dp"
+        android:text="@string/add" />
+
+    <Button
+        android:id="@+id/bsub"
+        style="@style/ButtonStyle"
+        android:layout_gravity="center"
+        android:text="@string/subtract" />
+
+    <Button
+        android:id="@+id/bmul"
+        style="@style/ButtonStyle"
+        android:text="@string/multiply" />
+
+    <Button
+        android:id="@+id/bdiv"
+        style="@style/ButtonStyle"
+        android:text="@string/divide" />
+
+    <Button
+        android:id="@+id/bmod"
+        style="@style/ButtonStyle"
+        android:text="@string/mod" />
+
+</LinearLayout>

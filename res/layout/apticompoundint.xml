@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              android:orientation="vertical"
+              android:layout_width="match_parent"
+              android:padding="10dp"
+              android:layout_height="match_parent">
+
+    <EditText
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:inputType="number"
+            android:ems="10"
+            android:id="@+id/EtPrincipal"
+            android:layout_marginTop="15dp"
+            android:hint="@string/EnterPrincipal"
+            android:textSize="22sp"/>
+    <EditText
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:inputType="number"
+            android:ems="10"
+            android:id="@+id/EtRate"
+            android:layout_marginTop="10dp"
+            android:textSize="22sp"
+            android:hint="@string/enterRate"/>
+    <EditText
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:inputType="number"
+            android:ems="10"
+            android:id="@+id/EtTime"
+            android:layout_marginTop="10dp"
+            android:textSize="22sp"
+            android:textIsSelectable="false"
+            android:hint="@string/entertime"/>
+    <TextView
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/TvAnswer"
+            android:layout_marginTop="15dp"
+            android:textSize="22sp" style="@style/TVStyle"/>
+    <Button
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            style="@style/ButtonStyle"
+            android:text="@string/calc"
+            android:id="@+id/bCalcCompoundInt"
+            android:layout_marginTop="15dp"/>
+</LinearLayout>

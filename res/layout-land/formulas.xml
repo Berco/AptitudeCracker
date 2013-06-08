@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical" >
+
+    <Button
+        android:id="@+id/numsysf"
+        style="@style/Style"
+        android:layout_marginTop="10dp"
+        android:text="@string/numsys" />
+
+    <Button
+        android:id="@+id/percentf"
+        style="@style/Style"
+        android:text="@string/percent" />
+
+    <Button
+        android:id="@+id/timenworkf"
+        style="@style/Style"
+        android:text="@string/timenwork" />
+
+    <Button
+        android:id="@+id/profitnlossf"
+        style="@style/Style"
+        android:text="@string/profitnloss" />
+
+    <Button
+        android:id="@+id/timendistf"
+        style="@style/Style"
+        android:text="@string/timendist" />
+
+    <Button
+        android:id="@+id/simpleintf"
+        style="@style/Style"
+        android:text="@string/simpleint" />
+
+    <Button
+        android:id="@+id/compoundintf"
+        style="@style/Style"
+        android:text="@string/compoundint" />
+
+    <Button
+        android:id="@+id/averagesf"
+        style="@style/Style"
+        android:text="@string/averages" />
+
+</LinearLayout>

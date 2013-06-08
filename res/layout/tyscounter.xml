@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:layout_marginTop="5.0dip"
+    android:gravity="center_horizontal"
+    android:orientation="vertical" >
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:padding="10dp" >
+
+        <TextView
+            android:id="@+id/TvNumberOfQues"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:paddingTop="10.0dip"
+            android:text="20 Questions"
+            android:textSize="50.0dip" />
+
+        <TextView
+            android:id="@+id/TvDifficultyType"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:paddingTop="20.0dip"
+            android:text="Medium"
+            android:textColor="#ff999999"
+            android:textSize="37.5dip"
+            android:visibility="visible" />
+
+        <TextView
+            android:id="@+id/TvQuestionsType"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:paddingTop="30.0dip"
+            android:text="Addition"
+            android:textColor="#ff646060"
+            android:textSize="25.0dip" />
+
+        <TextView
+            android:id="@+id/TvCounter"
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent"
+            android:layout_gravity="top"
+            android:layout_marginBottom="4.0dip"
+            android:gravity="center"
+            android:text="3"
+            android:textColor="#ff646060"
+            android:textSize="190.0dip"
+            android:typeface="serif" />
+    </LinearLayout>
+
+</LinearLayout>

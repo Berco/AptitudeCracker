@@ -1,0 +1,91 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="wrap_content"
+    android:layout_height="match_parent"
+    android:gravity="center"
+    android:orientation="vertical"
+    android:padding="10dp" >
+
+    <TextView
+        android:id="@+id/TvTestUrSkills"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_marginTop="15dp"
+        android:gravity="center"
+        android:text="@string/testyourskills"
+        android:textAppearance="?android:attr/textAppearanceLarge"
+        android:textColor="@color/DarkGray"
+        android:textSize="30sp" />
+
+    <TextView
+        android:id="@+id/TvAbility"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/TvTestUrSkills"
+        android:layout_centerInParent="true"
+        android:gravity="center"
+        android:text="@string/test_mental_ability"
+        android:textAppearance="?android:attr/textAppearanceMedium"
+        android:textColor="@color/DarkGray" />
+
+    <TextView
+        android:id="@+id/TvDifficultyType"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/TvAbility"
+        android:layout_marginTop="20dp"
+        android:gravity="center"
+        android:text="@string/difficulty_type"
+        android:textSize="18sp" />
+
+    <RadioGroup
+        android:id="@+id/RgDiffLevel"
+        style="@style/RGStyle"
+        android:layout_below="@+id/TvDifficultyType"
+        android:layout_marginTop="5dp"
+        android:gravity="center"
+        android:orientation="horizontal" >
+
+        <RadioButton
+            android:id="@+id/RbEasy"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginRight="5dp"
+            android:checked="true"
+            android:text="@string/easy" />
+
+        <RadioButton
+            android:id="@+id/RbMedium"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginRight="5dp"
+            android:text="@string/medium" />
+
+        <RadioButton
+            android:id="@+id/RbHard"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginRight="5dp"
+            android:text="@string/hard" />
+    </RadioGroup>
+
+    <Button
+        android:id="@+id/BContinue"
+        style="@style/ButtonStyle"
+        android:layout_width="wrap_content"
+        android:layout_below="@+id/RgDiffLevel"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="30dp"
+        android:text="@string/next" />
+
+    <Button
+        android:id="@+id/BHighScores"
+        style="@style/ButtonStyle"
+        android:layout_width="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        
+        android:text="@string/high_scores" />
+
+</RelativeLayout>

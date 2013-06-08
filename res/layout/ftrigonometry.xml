@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:ads="http://schemas.android.com/apk/lib/com.google.ads"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent" >
+
+    <RelativeLayout
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content" >
+
+        <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical" >
+
+            <Button
+                android:id="@+id/bTrigBasics"
+                style="@style/ButtonStyle"
+                android:layout_marginTop="30dp"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:text="@string/trigonometry_basics" />
+
+            <Button
+                android:id="@+id/bTrigCommonAngles"
+                style="@style/ButtonStyle"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:text="@string/trigonometry_common_angles" />
+
+            <Button
+                android:id="@+id/bTrigPeriodicFormulas"
+                style="@style/ButtonStyle"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:text="@string/trigonometry_periodic_formulas" />
+
+            <Button
+                android:id="@+id/bTrigPythagorean"
+                style="@style/ButtonStyle"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:text="@string/trigonometry_pythagorean" />
+
+            <Button
+                android:id="@+id/bHalfAngleFormulas"
+                style="@style/ButtonStyle"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:text="@string/half_angle_formulas_etc" />
+        </LinearLayout>
+    </RelativeLayout>
+
+</ScrollView>
