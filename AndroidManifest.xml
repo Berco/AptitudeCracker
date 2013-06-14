@@ -13,12 +13,8 @@
         android:icon="@drawable/ic_launcher"
         android:label="@string/app_name"
         android:theme="@style/AppTheme" >
-
-        <!-- __________________________________________________ -->
-
-
+        
         <!-- Main menu intents -->
-
         <activity
             android:name=".MainMenu"
             android:label="@string/app_name" >
@@ -28,370 +24,110 @@
             </intent-filter>
         </activity>
         
+        <activity android:name="com.droidacid.apticalc.aptitudes.AptiCalc" />
+        <activity android:name="com.droidacid.apticalc.tys.TYSMain" />
+        <activity android:name="com.droidacid.apticalc.tipsandtricks.TipsNTricks" />
+        <activity android:name="com.droidacid.apticalc.formulas.Formulas" />
         
-        <activity
-            android:name="com.droidacid.apticalc.tys.TYSMain"
-            android:label="@string/app_name" >
-        </activity>
-        <activity
-            android:name="com.droidacid.apticalc.tipsandtricks.TipsNTricks"
-            android:label="@string/app_name" >
-        </activity>
-        <activity
-            android:name="com.droidacid.apticalc.formulas.Formulas"
-            android:label="@string/app_name" >
-        </activity>
         
-
-        <!-- _________________________________________________________________ -->
-
-
         <!-- Aptitude Intents -->
-		<activity
-            android:name="com.droidacid.apticalc.aptitudes.AptiCalc"
-            android:label="@string/app_name" >
-        </activity>
-        <activity
-            android:name="com.droidacid.apticalc.aptitudes.AptiNumSys"
-            android:label="@string/app_name" >
-        </activity>
-        <activity
-            android:name="com.droidacid.apticalc.aptitudes.AptiPercent"
-            android:label="@string/app_name" >
-        </activity>
-        <activity
-            android:name="com.droidacid.apticalc.aptitudes.AptiPerValue"
-            android:label="@string/app_name" >
-        </activity>
-        <activity
-            android:name="com.droidacid.apticalc.aptitudes.AptiTimeNWork"
-            android:label="@string/app_name" >
-        </activity>
-        <activity
-            android:name="com.droidacid.apticalc.aptitudes.AptiTimeDist"
-            android:label="@string/app_name" >
-        </activity>
-        <activity
-            android:name="com.droidacid.apticalc.aptitudes.AptiInterest"
-            android:label="@string/app_name" >
-        </activity>
-        <activity
-            android:name="com.droidacid.apticalc.aptitudes.AptiSimpleInt"
-            android:label="@string/app_name" >
-        </activity>
-        <activity
-            android:name="com.droidacid.apticalc.aptitudes.AptiCompoundInt"
-            android:label="@string/app_name" >
-        </activity>
-        <activity
-            android:name="com.droidacid.apticalc.aptitudes.AptiLcmHcf"
-            android:label="@string/app_name" >
-        </activity>
-        <activity
-            android:name="com.droidacid.apticalc.aptitudes.AptiLcm"
-            android:label="@string/app_name" >
-        </activity>
-        <activity
-            android:name="com.droidacid.apticalc.aptitudes.AptiHcf"
-            android:label="@string/app_name" >
-        </activity>
-        <activity
-            android:name="com.droidacid.apticalc.tipsandtricks.TnTricksNumSys"
-            android:label="@string/app_name" >
-        </activity>
-
-        <!-- _________________________________________________________________ -->
-
-
+        <activity android:name="com.droidacid.apticalc.aptitudes.AptiNumSys" />
+        <activity android:name="com.droidacid.apticalc.aptitudes.AptiPercent" />
+        <activity android:name="com.droidacid.apticalc.aptitudes.AptiPerValue" />
+        <activity android:name="com.droidacid.apticalc.aptitudes.AptiTimeNWork" />
+        <activity android:name="com.droidacid.apticalc.aptitudes.AptiTimeDist" />
+        <activity android:name="com.droidacid.apticalc.aptitudes.AptiInterest" />
+        <activity android:name="com.droidacid.apticalc.aptitudes.AptiSimpleInt" />
+        <activity android:name="com.droidacid.apticalc.aptitudes.AptiCompoundInt" />
+        <activity android:name="com.droidacid.apticalc.aptitudes.AptiLcmHcf" />
+        <activity android:name="com.droidacid.apticalc.aptitudes.AptiLcm" />
+        <activity android:name="com.droidacid.apticalc.aptitudes.AptiHcf" />
+        <activity android:name="com.droidacid.apticalc.tipsandtricks.TnTricksNumSys" />
+        
         <!-- Formulas Intents Code -->
-
-        <activity
-            android:name="com.droidacid.apticalc.formulas.FSquaresCubesFractions"
-            android:label="@string/app_name" >
-        </activity>
-        <activity
-            android:name="com.droidacid.apticalc.formulas.FDivisibilityRule"
-            android:label="@string/app_name" >
-        </activity>
-        <activity
-            android:name="com.droidacid.apticalc.formulas.FExponents"
-            android:label="@string/app_name" >
-        </activity>
-        <activity
-            android:name="com.droidacid.apticalc.formulas.FLogarithms"
-            android:label="@string/app_name" >
-        </activity>
-        <activity
-            android:name="com.droidacid.apticalc.formulas.FProgressions"
-            android:label="@string/app_name" >
-        </activity>
-        <activity
-            android:name="com.droidacid.apticalc.formulas.FQuadratic"
-            android:label="@string/app_name" >
-        </activity>
-        <activity
-            android:name="com.droidacid.apticalc.formulas.FProbabilityPandC"
-            android:label="@string/app_name" >
-        </activity>
-        <activity
-            android:name="com.droidacid.apticalc.formulas.FGeometry"
-            android:label="@string/app_name" >
-        </activity>
-        <activity
-            android:name="com.droidacid.apticalc.formulas.FCoordinateGeometry"
-            android:label="@string/app_name" >
-        </activity>
-        <activity
-            android:name="com.droidacid.apticalc.formulas.FTrigonometry"
-            android:label="@string/app_name" >
-        </activity>
-
-        <!-- ________________Squares, Cubes, Decimals______________________ -->
-
-        <activity
-            android:name="com.droidacid.apticalc.formulas.FSquares"
-            android:label="@string/app_name" >
-        </activity>
-        <activity
-            android:name="com.droidacid.apticalc.formulas.FCubes"
-            android:label="@string/app_name" >
-        </activity>
-        <activity
-            android:name="com.droidacid.apticalc.formulas.FDecimals"
-            android:label="@string/app_name" >
-        </activity>
-        <activity
-            android:name="com.droidacid.apticalc.formulas.FProbability"
-            android:label="@string/app_name" />
-        <activity
-            android:name="com.droidacid.apticalc.formulas.FBinomial"
-            android:label="@string/app_name" />
-        <activity
-            android:name="com.droidacid.apticalc.formulas.FCount"
-            android:label="@string/app_name" />
-        <activity
-            android:name="com.droidacid.apticalc.formulas.FGeometryFundamentals"
-            android:label="@string/app_name" />
-        <activity
-            android:name="com.droidacid.apticalc.formulas.FAreasAndPerimeters"
-            android:label="@string/app_name" />
-        <activity 
-            android:name="com.droidacid.apticalc.formulas.FVolumeAndSurfaceAreas"
-            android:label="@string/app_name" />
-        <activity
-            android:name="com.droidacid.apticalc.formulas.FCircleProperties"
-            android:label="@string/app_name" />
-        <activity
-            android:name="com.droidacid.apticalc.formulas.FTriangleProperties"
-            android:label="@string/app_name" />
-        <activity
-            android:name="com.droidacid.apticalc.formulas.FQuadrilateralProperties"
-            android:label="@string/app_name" />
-        <activity
-            android:name="com.droidacid.apticalc.formulas.FPentagonProperties"
-            android:label="@string/app_name" />
-
-        <!-- _______________Geometry Geometry Fundamentals__________________ -->
-
-        <activity
-            android:name="com.droidacid.apticalc.formulas.FGeometry1"
-            android:label="@string/app_name" >
-        </activity>
-        <activity
-            android:name="com.droidacid.apticalc.formulas.FGeometry2"
-            android:label="@string/app_name" >
-        </activity>
-        <activity
-            android:name="com.droidacid.apticalc.formulas.FGeometry3"
-            android:label="@string/app_name" >
-        </activity>
-        <activity
-            android:name="com.droidacid.apticalc.formulas.FGeometry4"
-            android:label="@string/app_name" />
-        <activity
-            android:name="com.droidacid.apticalc.formulas.FGeometry5"
-            android:label="@string/app_name" />
-
-        <!-- ________________Geometry Area_____________________ -->
-
-        <activity
-            android:name="com.droidacid.apticalc.formulas.FAreaCircle"
-            android:label="@string/app_name" />
-        <activity
-            android:name="com.droidacid.apticalc.formulas.FAreaTriangle"
-            android:label="@string/app_name" />
-        <activity
-            android:name="com.droidacid.apticalc.formulas.FAreaEquilateralTriangle"
-            android:label="@string/app_name" />
-        <activity
-            android:name="com.droidacid.apticalc.formulas.FAreaSquare"
-            android:label="@string/app_name" />
-        <activity
-            android:name="com.droidacid.apticalc.formulas.FAreaRectangle"
-            android:label="@string/app_name" />
-        <activity
-            android:name="com.droidacid.apticalc.formulas.FAreaParallogram"
-            android:label="@string/app_name" />
-        <activity
-            android:name="com.droidacid.apticalc.formulas.FAreaRing"
-            android:label="@string/app_name" />
-        <activity
-            android:name="com.droidacid.apticalc.formulas.FAreaSector"
-            android:label="@string/app_name" />
-        <activity
-            android:name="com.droidacid.apticalc.formulas.FAreaTrapezoid"
-            android:label="@string/app_name" />
-
-        <!-- _____________com.droidacid.apticalc.formulas.FVolume_______________________ -->
-
-        <activity
-           	android:name="com.droidacid.apticalc.formulas.FVolumeCone"
-            android:label="@string/app_name" />
-        <activity
-           android:name="com.droidacid.apticalc.formulas.FVolumeCube"
-            android:label="@string/app_name" />
-        <activity
-            android:name="com.droidacid.apticalc.formulas.FVolumeCylinder"
-            android:label="@string/app_name" />
-        <activity
-            android:name="com.droidacid.apticalc.formulas.FVolumeFrustum"
-            android:label="@string/app_name" />
-        <activity
-            android:name="com.droidacid.apticalc.formulas.FVolumePyramid"
-            android:label="@string/app_name" />
-        <activity 
-            android:name="com.droidacid.apticalc.formulas.FVolumeSphere"
-            android:label="@string/app_name" />
-
-        <!-- _____________Geometry Circle Properties_____________________ -->
-
-        <activity
-            android:name="com.droidacid.apticalc.formulas.FCircleProperties1"
-            android:label="@string/app_name" />
-        <activity
-            android:name="com.droidacid.apticalc.formulas.FCircleProperties2"
-            android:label="@string/app_name" />
-        <activity
-            android:name="com.droidacid.apticalc.formulas.FCircleProperties3"
-            android:label="@string/app_name" />
-        <activity
-            android:name="com.droidacid.apticalc.formulas.FCircleProperties4"
-            android:label="@string/app_name" />
-        <activity
-            android:name="com.droidacid.apticalc.formulas.FTriangle1ctivity"
-            android:label="@string/app_name" />
-        <activity
-            android:name="com.droidacid.apticalc.formulas.FCircleProperties5"
-            android:label="@string/app_name" />
-
-        <!-- _______________Geometry Triangle Properties____________________ -->
-
-        <activity
-            android:name="com.droidacid.apticalc.formulas.FTriangle1"
-            android:label="@string/app_name" />
-        <activity 
-            android:name="com.droidacid.apticalc.formulas.FTriangle2"
-            android:label="@string/app_name" />
-        <activity
-            android:name="com.droidacid.apticalc.formulas.FTriangle3"
-            android:label="@string/app_name" />
-        <activity
-            android:name="com.droidacid.apticalc.formulas.FTriangle4"
-            android:label="@string/app_name" />
-        <activity 
-            android:name="com.droidacid.apticalc.formulas.FTriangle5"
-            android:label="@string/app_name" />
-        <activity
-            android:name="com.droidacid.apticalc.formulas.FTriangle6"
-            android:label="@string/app_name" />
-        <activity
-            android:name="com.droidacid.apticalc.formulas.FTriangle7"
-            android:label="@string/app_name" />
-        <activity
-            android:name="com.droidacid.apticalc.formulas.FTriangle8"
-            android:label="@string/app_name" />
-        <activity
-            android:name="com.droidacid.apticalc.formulas.FTriangle9"
-            android:label="@string/app_name" />
-    
-    
-    <!-- ___________CoOrdinate Geometry____________ -->
-    
-    <activity
-            android:name="com.droidacid.apticalc.formulas.FLineEquation"
-            android:label="@string/app_name" />
-        <activity
-            android:name="com.droidacid.apticalc.formulas.FLineDistance"
-            android:label="@string/app_name" />
-        <activity
-            android:name="com.droidacid.apticalc.formulas.FLineMidpoint"
-            android:label="@string/app_name" />
-        <activity
-            android:name="com.droidacid.apticalc.formulas.FLineSlope"
-            android:label="@string/app_name" />
-        <activity
-            android:name="com.droidacid.apticalc.formulas.FSlopeParallelLines"
-            android:label="@string/app_name" />
-        <activity
-            android:name="com.droidacid.apticalc.formulas.FSlopePerpendicularLines"
-            android:label="@string/app_name" />
-      <!--  
+        <activity android:name="com.droidacid.apticalc.formulas.FSquaresCubesFractions" />
+        <activity android:name="com.droidacid.apticalc.formulas.FDivisibilityRule" />
+        <activity android:name="com.droidacid.apticalc.formulas.FExponents" />
+        <activity android:name="com.droidacid.apticalc.formulas.FLogarithms" />
+        <activity android:name="com.droidacid.apticalc.formulas.FProgressions" />
+        <activity android:name="com.droidacid.apticalc.formulas.FQuadratic"/>
+        <activity android:name="com.droidacid.apticalc.formulas.FProbabilityPandC" />
+        <activity android:name="com.droidacid.apticalc.formulas.FGeometry" />
+        <activity android:name="com.droidacid.apticalc.formulas.FCoordinateGeometry" />
+        <activity android:name="com.droidacid.apticalc.formulas.FTrigonometry" />
+        <activity android:name="com.droidacid.apticalc.formulas.FSquares" />
+        <activity android:name="com.droidacid.apticalc.formulas.FCubes" />
+        <activity android:name="com.droidacid.apticalc.formulas.FDecimals" />
+        <activity android:name="com.droidacid.apticalc.formulas.FProbability" />
+        <activity android:name="com.droidacid.apticalc.formulas.FBinomial" />
+        <activity android:name="com.droidacid.apticalc.formulas.FCount" />
+        <activity android:name="com.droidacid.apticalc.formulas.FGeometryFundamentals" />
+        <activity android:name="com.droidacid.apticalc.formulas.FAreasAndPerimeters" />
+        <activity android:name="com.droidacid.apticalc.formulas.FVolumeAndSurfaceAreas" />
+        <activity android:name="com.droidacid.apticalc.formulas.FCircleProperties" />
+        <activity android:name="com.droidacid.apticalc.formulas.FTriangleProperties" />
+        <activity android:name="com.droidacid.apticalc.formulas.FQuadrilateralProperties" />
+        <activity android:name="com.droidacid.apticalc.formulas.FPentagonProperties" />
+        <activity android:name="com.droidacid.apticalc.formulas.FGeometry1" />
+        <activity android:name="com.droidacid.apticalc.formulas.FGeometry2" />
+        <activity android:name="com.droidacid.apticalc.formulas.FGeometry3" />
+        <activity android:name="com.droidacid.apticalc.formulas.FGeometry4" />
+        <activity android:name="com.droidacid.apticalc.formulas.FGeometry5" />
+        <activity android:name="com.droidacid.apticalc.formulas.FAreaCircle" />
+        <activity android:name="com.droidacid.apticalc.formulas.FAreaTriangle" />
+        <activity android:name="com.droidacid.apticalc.formulas.FAreaEquilateralTriangle" />
+        <activity android:name="com.droidacid.apticalc.formulas.FAreaSquare" />
+        <activity android:name="com.droidacid.apticalc.formulas.FAreaRectangle" />
+        <activity android:name="com.droidacid.apticalc.formulas.FAreaParallogram" />
+        <activity android:name="com.droidacid.apticalc.formulas.FAreaRing" />
+        <activity android:name="com.droidacid.apticalc.formulas.FAreaSector" />
+        <activity android:name="com.droidacid.apticalc.formulas.FAreaTrapezoid" />
+        <activity android:name="com.droidacid.apticalc.formulas.FVolumeCone" />
+        <activity android:name="com.droidacid.apticalc.formulas.FVolumeCube" />
+        <activity android:name="com.droidacid.apticalc.formulas.FVolumeCylinder" />
+        <activity android:name="com.droidacid.apticalc.formulas.FVolumeFrustum" />
+        <activity android:name="com.droidacid.apticalc.formulas.FVolumePyramid" />
+        <activity android:name="com.droidacid.apticalc.formulas.FVolumeSphere" /> 
+        <activity android:name="com.droidacid.apticalc.formulas.FCircleProperties1" />
+        <activity android:name="com.droidacid.apticalc.formulas.FCircleProperties2" />
+        <activity android:name="com.droidacid.apticalc.formulas.FCircleProperties3" />
+        <activity android:name="com.droidacid.apticalc.formulas.FCircleProperties4" />
+        <activity android:name="com.droidacid.apticalc.formulas.FTriangle1ctivity" />
+        <activity android:name="com.droidacid.apticalc.formulas.FCircleProperties5" />
+        <activity android:name="com.droidacid.apticalc.formulas.FTriangle1" />
+        <activity android:name="com.droidacid.apticalc.formulas.FTriangle2" />
+        <activity android:name="com.droidacid.apticalc.formulas.FTriangle3" />
+        <activity android:name="com.droidacid.apticalc.formulas.FTriangle4" />
+        <activity android:name="com.droidacid.apticalc.formulas.FTriangle5" />
+        <activity android:name="com.droidacid.apticalc.formulas.FTriangle6" />
+        <activity android:name="com.droidacid.apticalc.formulas.FTriangle7" />
+        <activity android:name="com.droidacid.apticalc.formulas.FTriangle8" />
+        <activity android:name="com.droidacid.apticalc.formulas.FTriangle9" />
+        <activity android:name="com.droidacid.apticalc.formulas.FLineEquation" />
+        <activity android:name="com.droidacid.apticalc.formulas.FLineDistance" />
+        <activity android:name="com.droidacid.apticalc.formulas.FLineMidpoint" />
+        <activity android:name="com.droidacid.apticalc.formulas.FLineSlope" />
+        <activity android:name="com.droidacid.apticalc.formulas.FSlopeParallelLines" />
+        <activity android:name="com.droidacid.apticalc.formulas.FSlopePerpendicularLines" />
+      <!-- NEED TO FIX THIS PART, ECLIPSE FUCKED SOMETHING UP  
       com.droidacid.apticalc.formulas.FTrigonometryCommonAnglesng/app_name" />
        com.droidacid.apticalc.formulas.FTrigonometryPeriodicFormulasd:name=".FCircleEquation"
             android:label="@string/com.droidacid.apticalc.formulas.FTrigonometryBasics 
-      -->   
-        <!-- _______Trinometry_________ -->
+      -->
+        <activity android:name="com.droidacid.apticalc.formulas.FTrigonometryBasics" />
+        <activity android:name="com.droidacid.apticalc.formulas.FTrigonometryCommonAngles" />
+        <activity android:name="com.droidacid.apticalc.formulas.FTrigonometryPeriodicFormulas" />
+        <activity android:name="com.droidacid.apticalc.formulas.FTrigonometryPythagorean" />
+        <activity android:name="com.droidacid.apticalc.formulas.FHalfAngleFormulas" />
         
-        <activity
-            android:name="com.droidacid.apticalc.formulas.FTrigonometryBasics"
-            android:label="@string/app_name" >
-        </activity>
-        <activity
-            android:name="com.droidacid.apticalc.formulas.FTrigonometryCommonAngles"
-            android:label="@string/app_name" >
-        </activity>
-        <activity
-            android:name="com.droidacid.apticalc.formulas.FTrigonometryPeriodicFormulas"
-            android:label="@string/app_name" >
-        </activity>
-        <activity
-            android:name="com.droidacid.apticalc.formulas.FTrigonometryPythagorean"
-            android:label="@string/app_name" >
-        </activity>
-        <activity
-            android:name="com.droidacid.apticalc.formulas.FHalfAngleFormulas"
-            android:label="@string/app_name" >
-        </activity>
+        <!-- _____________________ More About This App __________________ -->  
+        <activity android:name="com.droidacid.apticalc.more.More" />
+        <activity android:name="com.droidacid.apticalc.more.AboutUs" />
+        <activity android:name="com.droidacid.apticalc.more.LikeUs" />
+        <activity android:name="com.droidacid.apticalc.more.Report" />
+        <activity android:name="com.droidacid.apticalc.more.Review" />
+        <activity android:name="com.droidacid.apticalc.more.Suggest" />
+        <activity android:name="com.droidacid.apticalc.more.Upgrade" />
         
-      <!-- _____________________ More About This App __________________ -->  
-      
-      <activity
-            android:name="com.droidacid.apticalc.more.More"
-            android:label="@string/app_name" >
-        </activity>
-      <activity
-            android:name="com.droidacid.apticalc.more.AboutUs"
-            android:label="@string/app_name" >
-        </activity>
-        <activity
-            android:name="com.droidacid.apticalc.more.LikeUs"
-            android:label="@string/app_name" >
-        </activity>
-        <activity
-            android:name="com.droidacid.apticalc.more.Report"
-            android:label="@string/app_name" >
-        </activity>
-        <activity
-            android:name="com.droidacid.apticalc.more.Review"
-            android:label="@string/app_name" >
-        </activity>
-        <activity
-            android:name="com.droidacid.apticalc.more.Suggest"
-            android:label="@string/app_name" >
-        </activity>
-        <activity
-            android:name="com.droidacid.apticalc.more.Upgrade"
-            android:label="@string/app_name" >
-        </activity>
 </application>
 </manifest>
