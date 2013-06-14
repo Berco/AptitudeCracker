@@ -4,7 +4,7 @@ import com.droidacid.apticalc.aptitudes.AptiCalc;
 import com.droidacid.apticalc.formulas.Formulas;
 import com.droidacid.apticalc.more.More;
 import com.droidacid.apticalc.tipsandtricks.TipsNTricks;
-import com.droidacid.apticalc.tys.TYSMain;
+import com.droidacid.apticalc.tys.OneDifficulty;
 
 import android.app.Activity;
 import android.content.Intent;
@@ -53,7 +53,7 @@ public class MainMenu extends Activity implements android.view.View.OnClickListe
 			break;
 		case R.id.btesturskills:
 			
-			Intent TestUrSkills = new Intent(this, TYSMain.class);
+			Intent TestUrSkills = new Intent(this, OneDifficulty.class);
 			startActivity(TestUrSkills);
 			Log.d(tag, "Inside test your skills switch case");
 			break;

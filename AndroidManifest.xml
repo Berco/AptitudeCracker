@@ -25,10 +25,16 @@
         </activity>
         
         <activity android:name="com.droidacid.apticalc.aptitudes.AptiCalc" />
-        <activity android:name="com.droidacid.apticalc.tys.TYSMain" />
+        <activity android:name="com.droidacid.apticalc.tys.OneDifficulty" />
         <activity android:name="com.droidacid.apticalc.tipsandtricks.TipsNTricks" />
         <activity android:name="com.droidacid.apticalc.formulas.Formulas" />
         
+        <!-- Test yourself -->
+        <activity android:name="com.droidacid.apticalc.tys.TwoLevel" />
+        <activity android:name="com.droidacid.apticalc.tys.ThreeCounter" />
+        <activity android:name="com.droidacid.apticalc.tys.FourCalculation" />
+        <activity android:name="com.droidacid.apticalc.tys.TYSScores" />
+        <activity android:name="com.droidacid.apticalc.tys.HighScores" />
         
         <!-- Aptitude Intents -->
         <activity android:name="com.droidacid.apticalc.aptitudes.AptiNumSys" />

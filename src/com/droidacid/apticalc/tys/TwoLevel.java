@@ -1,8 +1,6 @@
 package com.droidacid.apticalc.tys;
 
 import com.droidacid.apticalc.R;
-import com.droidacid.apticalc.R.id;
-import com.droidacid.apticalc.R.layout;
 
 import android.app.Activity;
 import android.content.Intent;
@@ -11,28 +9,26 @@ import android.view.View;
 import android.view.View.OnClickListener;
 import android.widget.Button;
 
-public class TYSMain1 extends Activity implements OnClickListener {
+public class TwoLevel extends Activity implements OnClickListener {
 
 	final static String tag = "TYSMain1 Activity";
 	Button BAdd, BSubtract, BMultiply, BDivide, BAll;
 	
-	private static final int EASY = 0;
-	private static final int MEDIUM = 1;
-	private static final int HARD = 2;
+	
 	private static final int ADDITION = 0;
-	private static final int SUBSTRACT = 1;
+	private static final int SUBTRACT = 1;
 	private static final int MULTIPLY = 2;
 	private static final int DIVIDE = 3;
 	private static final int ALL = 4;
 	
-	private int mDifficultyType;
-	private int mQuestionType = ADDITION;
+	
+	private int mQuestions, mDifficulty;
 
 	@Override
 	protected void onCreate(Bundle savedInstanceState) {
 
 		super.onCreate(savedInstanceState);
-		setContentView(R.layout.tysmain1);
+		setContentView(R.layout.tys_two_level);
 		
 		
 		Initialize();
@@ -60,30 +56,38 @@ public class TYSMain1 extends Activity implements OnClickListener {
 	@Override
 	public void onClick(View v) {
 		
-		Bundle difficultyType = getIntent().getExtras();
-		difficultyType.putInt("questionType", mQuestionType);
+		Bundle gotDifficulty = getIntent().getExtras();
+		mDifficulty = gotDifficulty.getInt("difficulty", 0);
+		Bundle QuestionType = new Bundle();
+		QuestionType.putInt("difficulty", mDifficulty);
 		
-		Intent Counter = new Intent(this, TYS_Counter.class);
-		
-				
+		Intent Counter = new Intent(this, ThreeCounter.class);
+					
 		switch (v.getId()) {
 
 		case R.id.BAddition:
-			Counter.putExtras(difficultyType);
+			mQuestions = ADDITION;
+			Counter.putExtras(QuestionType);
 			break;
 		case R.id.BSubtraction:
-			Counter.putExtras(difficultyType);
+			mQuestions = SUBTRACT;
+			Counter.putExtras(QuestionType);
 			break;
 		case R.id.BMultiplication:
-			Counter.putExtras(difficultyType);
+			mQuestions = MULTIPLY;
+			Counter.putExtras(QuestionType);
 			break;
 		case R.id.BDivision:
-			Counter.putExtras(difficultyType);
+			mQuestions = DIVIDE;
+			Counter.putExtras(QuestionType);
 			break;
 		case R.id.BAll:
-			Counter.putExtras(difficultyType);
+			mQuestions = ALL;
+			Counter.putExtras(QuestionType);
 			break;
 		}
+		QuestionType.putInt("questionType", mQuestions);
+		Counter.putExtras(QuestionType);
 		startActivity(Counter);
 
 	}

@@ -8,34 +8,42 @@
     android:paddingRight="@dimen/activity_horizontal_margin"
     android:paddingTop="@dimen/activity_vertical_margin" >
 
+    <TextView
+        android:id="@+id/TvTimer"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentTop="true"
+        android:layout_weight=".25"
+        android:gravity="center"
+        android:text="00:00"
+        android:textAppearance="?android:attr/textAppearanceMedium" />
+
     <LinearLayout
         android:id="@+id/LMain"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        
         android:layout_alignParentTop="true"
         android:layout_marginTop="15dp"
-        android:padding="5dp"
-        android:orientation="horizontal" >
+        android:orientation="horizontal"
+        android:padding="5dp" >
 
         <TextView
-            android:id="@+id/textView1"
+            android:id="@+id/TvQuestions"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_weight=".75"
             android:gravity="center"
-            android:text="Large Text"
             
             android:textAppearance="?android:attr/textAppearanceLarge"
-            android:textSize="50sp" />
+            android:textSize="28sp" />
 
         <TextView
-            android:id="@+id/textView2"
+            android:id="@+id/TvNumberOfQuestions"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_weight=".25"
             android:gravity="center"
-            android:text="00:00"
             android:textAppearance="?android:attr/textAppearanceMedium" />
     </LinearLayout>
 
@@ -45,18 +53,17 @@
         android:layout_height="wrap_content"
         android:layout_below="@+id/LMain"
         android:layout_centerHorizontal="true"
-        
-        android:padding="5dp" >
+        android:padding="4dp" >
 
-        <EditText
-            android:id="@+id/EtAnswers"
-            style="@style/ButtonStyle"
+        <TextView
+            android:id="@+id/TvAnswers"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
             android:clickable="false"
-            android:cursorVisible="false"
-            android:textSize="35sp"
-            
-            android:inputType="number" >
-        </EditText>
+            android:textSize="28sp" />
+
+        <TextView android:inputType="number" >
+        </TextView>
     </TableRow>
 
     <TableLayout
@@ -65,35 +72,35 @@
         android:layout_height="wrap_content"
         android:layout_below="@+id/TrEdit"
         android:orientation="vertical"
-        android:padding="5dp" >
+        android:padding="4dp" >
 
         <TableRow
             android:id="@+id/TR1"
             android:layout_width="fill_parent"
             android:layout_height="wrap_content"
-            android:padding="2dp" >
+            android:padding="1dp" >
 
             <Button
                 android:id="@+id/B1"
-                style="@style/ButtonStyle"
                 android:layout_width="0dp"
-                android:layout_marginTop="24dp"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="13dp"
                 android:layout_weight=".33"
                 android:text="1" />
 
             <Button
                 android:id="@+id/B2"
-                style="@style/ButtonStyle"
                 android:layout_width="0dp"
-                android:layout_marginTop="24dp"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="13dp"
                 android:layout_weight=".33"
                 android:text="2" />
 
             <Button
                 android:id="@+id/B3"
-                style="@style/ButtonStyle"
                 android:layout_width="0dp"
-                android:layout_marginTop="24dp"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="13dp"
                 android:layout_weight=".33"
                 android:text="3" />
         </TableRow>
@@ -103,29 +110,26 @@
             android:layout_width="fill_parent"
             android:layout_height="wrap_content"
             android:layout_below="@+id/TR1"
-            android:padding="2dp" >
+            android:padding="1dp" >
 
             <Button
-                android:id="@+id/B24"
-                style="@style/ButtonStyle"
+                android:id="@+id/B4"
                 android:layout_width="0dp"
-                android:layout_marginTop="7dp"
+                android:layout_height="wrap_content"
                 android:layout_weight=".33"
                 android:text="4" />
 
             <Button
                 android:id="@+id/B5"
-                style="@style/ButtonStyle"
                 android:layout_width="0dp"
-                android:layout_marginTop="7dp"
+                android:layout_height="wrap_content"
                 android:layout_weight=".33"
                 android:text="5" />
 
             <Button
                 android:id="@+id/B6"
-                style="@style/ButtonStyle"
                 android:layout_width="0dp"
-                android:layout_marginTop="7dp"
+                android:layout_height="wrap_content"
                 android:layout_weight=".33"
                 android:text="6" />
         </TableRow>
@@ -135,29 +139,26 @@
             android:layout_width="fill_parent"
             android:layout_height="wrap_content"
             android:layout_below="@+id/TR2"
-            android:padding="2dp" >
+            android:padding="1dp" >
 
             <Button
                 android:id="@+id/B7"
-                style="@style/ButtonStyle"
                 android:layout_width="0dp"
-                android:layout_marginTop="7dp"
+                android:layout_height="wrap_content"
                 android:layout_weight=".33"
                 android:text="7" />
 
             <Button
                 android:id="@+id/B8"
-                style="@style/ButtonStyle"
                 android:layout_width="0dp"
-                android:layout_marginTop="7dp"
+                android:layout_height="wrap_content"
                 android:layout_weight=".33"
                 android:text="8" />
 
             <Button
                 android:id="@+id/B9"
-                style="@style/ButtonStyle"
                 android:layout_width="0dp"
-                android:layout_marginTop="7dp"
+                android:layout_height="wrap_content"
                 android:layout_weight=".33"
                 android:text="9" />
         </TableRow>
@@ -166,19 +167,19 @@
             android:layout_width="fill_parent"
             android:layout_height="wrap_content"
             android:layout_below="@+id/TR3"
-            android:padding="2dp" >
+            android:padding="1dp" >
 
             <Button
                 android:id="@+id/B0"
-                style="@style/ButtonStyle"
                 android:layout_width="0dp"
+                android:layout_height="wrap_content"
                 android:layout_weight=".33"
                 android:text="0" />
 
             <Button
                 android:id="@+id/BClear"
-                style="@style/ButtonStyle"
                 android:layout_width="0dp"
+                android:layout_height="wrap_content"
                 android:layout_weight=".66"
                 android:text="Clear" />
         </TableRow>
