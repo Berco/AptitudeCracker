@@ -27,7 +27,7 @@ public class MainMenu extends Activity implements android.view.View.OnClickListe
 		btesturskills = (Button) findViewById(R.id.btesturskills);
 		btipsntricks = (Button) findViewById(R.id.btipsntricks);
 		bformulas = (Button) findViewById(R.id.bformulas);		
-		bmore = (Button) findViewById(R.id.babout);
+		bmore = (Button) findViewById(R.id.bmore);
 		
 		bapticalc.setOnClickListener(this);
 		btesturskills.setOnClickListener(this);
