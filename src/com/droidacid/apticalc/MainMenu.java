@@ -1,6 +1,10 @@
 package com.droidacid.apticalc;
 
-import com.droidacid.more.More;
+import com.droidacid.apticalc.aptitudes.AptiCalc;
+import com.droidacid.apticalc.formulas.Formulas;
+import com.droidacid.apticalc.more.More;
+import com.droidacid.apticalc.tipsandtricks.TipsNTricks;
+import com.droidacid.apticalc.tys.TYSMain;
 
 import android.app.Activity;
 import android.content.Intent;

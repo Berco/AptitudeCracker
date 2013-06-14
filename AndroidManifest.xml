@@ -33,11 +33,11 @@
             android:label="@string/app_name" >
         </activity>
         <activity
-            android:name=".TYSMain"
+            android:name="com.droidacid.apticalc.tys.TYSMain"
             android:label="@string/app_name" >
         </activity>
         <activity
-            android:name=".TipsNTricks"
+            android:name="com.droidacid.apticalc.tipsandtricks.TipsNTricks"
             android:label="@string/app_name" >
         </activity>
         <activity
@@ -99,7 +99,7 @@
             android:label="@string/app_name" >
         </activity>
         <activity
-            android:name=".TnTricksNumSys"
+            android:name="com.droidacid.apticalc.tipsandtricks.TnTricksNumSys"
             android:label="@string/app_name" >
         </activity>
 
@@ -145,7 +145,7 @@
             android:label="@string/app_name" >
         </activity>
         <activity
-            android:name=".FTrigonometry"
+            android:name="com.droidacid.apticalc.formulas.FTrigonometry"
             android:label="@string/app_name" >
         </activity>
 
@@ -178,14 +178,13 @@
         <activity
             android:name=".FAreasAndPerimeters"
             android:label="@string/app_name" />
-        <activity
-            android:name=".FVolumeAndSurfaceAreas"
+        <activcom.droidacid.apticalc.formulas.FVolumeAndSurfaceAreasd:name=".FVolumeAndSurfaceAreas"
             android:label="@string/app_name" />
         <activity
             android:name=".FCircleProperties"
             android:label="@string/app_name" />
         <activity
-            android:name=".FTriangleProperties"
+            android:name="com.droidacid.apticalc.formulas.FTriangleProperties"
             android:label="@string/app_name" />
         <activity
             android:name=".FQuadrilateralProperties"
@@ -245,13 +244,13 @@
             android:name=".FAreaTrapezoid"
             android:label="@string/app_name" />
 
-        <!-- _______________Geometry Volume_______________________ -->
+        <!-- _____________com.droidacid.apticalc.formulas.FVolumeConeolume_______________________ -->
 
         <activity
-            android:name=".FVolumeCone"
+           com.droidacid.apticalc.formulas.FVolumeCubee=".FVolumeCone"
             android:label="@string/app_name" />
         <activity
-            android:name=".FVolumeCube"
+           com.droidacid.apticalc.formulas.FVolumeCylinderFVolumeCube"
             android:label="@string/app_name" />
         <activity
             android:name=".FVolumeCylinder"
@@ -260,10 +259,9 @@
             android:name=".FVolumeFrustum"
             android:label="@string/app_name" />
         <activity
-            android:name=".FVolumePyramid"
+            android:name="com.droidacid.apticalc.formulas.FVolumePyramid"
             android:label="@string/app_name" />
-        <activity
-            android:name=".FVolumeSphere"
+        <activcom.droidacid.apticalc.formulas.FVolumeSphere   android:name=".FVolumeSphere"
             android:label="@string/app_name" />
 
         <!-- _____________Geometry Circle Properties_____________________ -->
@@ -279,8 +277,7 @@
             android:label="@string/app_name" />
         <activity
             android:name=".FCircleProperties4"
-            android:label="@string/app_name" />
-        <activity
+            android:label="@string/app_name" />com.droidacid.apticalc.formulas.FTriangle1ctivity
             android:name=".FCircleProperties5"
             android:label="@string/app_name" />
 
@@ -289,21 +286,19 @@
         <activity
             android:name=".FTriangle1"
             android:label="@string/app_name" />
-        <activity
-            android:name=".FTriangle2"
+        <activcom.droidacid.apticalc.formulas.FTriangle2    com.droidacid.apticalc.formulas.FTriangle3ame=".FTriangle2"
             android:label="@string/app_name" />
         <activity
             android:name=".FTriangle3"
             android:label="@string/app_name" />
         <activity
-            android:name=".FTriangle4"
-            android:label="@string/app_name" />
+            android:name="com.droidacid.apticalc.formulas.FTriangle4"
+            android:label="@strcom.droidacid.apticalc.formulas.FTriangle7e" />
+        <activcom.droidacid.apticalc.formulas.FTriangle5      android:name=".FTriangle5"
+            andcom.droidacid.apticalc.formulas.FTriangle9"@string/app_name" />
         <activity
-            android:name=".FTriangle5"
-            android:label="@string/app_name" />
-        <activity
-            android:name=".FTriangle6"
-            android:label="@string/app_name" />
+            android:name="com.droidacid.apticalc.formulas.FTriangle6"
+            andrcom.droidacid.apticalc.formulas.FTriangle8@string/app_name" />
         <activity
             android:name=".FTriangle7"
             android:label="@string/app_name" />
@@ -334,11 +329,9 @@
             android:label="@string/app_name" />
         <activity
             android:name=".FSlopePerpendicularLines"
-            android:label="@string/app_name" />
-        <activity
-            android:name=".FCircleEquation"
-            android:label="@string/app_name" />
-        
+      com.droidacid.apticalc.formulas.FTrigonometryCommonAnglesng/app_name" />
+       com.droidacid.apticalc.formulas.FTrigonometryPeriodicFormulasd:name=".FCircleEquation"
+            android:label="@string/com.droidacid.apticalc.formulas.FTrigonometryBasics  
         <!-- _______Trinometry_________ -->
         
         <activity
@@ -354,7 +347,7 @@
             android:label="@string/app_name" >
         </activity>
         <activity
-            android:name=".FTrigonometryPythagorean"
+            android:name="com.droidacid.apticalc.formulas.FTrigonometryPythagorean"
             android:label="@string/app_name" >
         </activity>
         <activity
