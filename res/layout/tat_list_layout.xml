@@ -3,17 +3,9 @@
 	android:layout_width="fill_parent" 
 	android:layout_height="fill_parent"
 	android:orientation="vertical" >
-    
 	<ListView android:id="@android:id/list" 
 		android:layout_width="fill_parent"
 		android:layout_height="fill_parent" 
-		android:layout_weight="1"
 		android:fadeScrollbars="false"
 		android:divider="#00000000" />
-	<TextView 
-		android:id="@+id/tv_tips_tipsview"
-		android:layout_width="fill_parent"
-		android:layout_height="fill_parent"
-		android:layout_weight="1" 
-		android:text="No search results." />
 </LinearLayout>
