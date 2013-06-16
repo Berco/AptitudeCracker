@@ -22,7 +22,8 @@ public class TipsListAdapter extends ArrayAdapter<String> {
     public void setData(String[] tips) {
         clear();
         if (tips != null) {
-            addAll(tips);
+        	for (String tip: tips)
+            add(tip);
         }
     }
 
