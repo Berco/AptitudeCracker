@@ -37,9 +37,9 @@ public class OneDifficulty extends Activity implements OnClickListener,
 
 	private void Initialize() {
 
-		RgDiffLevel = (RadioGroup) findViewById(R.id.RgDiffLevel);
-		bContinue = (Button) findViewById(R.id.bContinue);
-		bHighScores = (Button) findViewById(R.id.bHighScores);
+		RgDiffLevel = (RadioGroup) findViewById(R.id.Rg_tys_DiffLevel);
+		bContinue = (Button) findViewById(R.id.b_tys_Continue);
+		bHighScores = (Button) findViewById(R.id.b_tys_HighScores);
 		
 		RgDiffLevel.setOnCheckedChangeListener(this);
 		bContinue.setOnClickListener(this);
@@ -50,7 +50,7 @@ public class OneDifficulty extends Activity implements OnClickListener,
 	public void onClick(View v) {
 		switch(v.getId()){
 		
-		case R.id.bContinue:
+		case R.id.b_tys_Continue:
 			Log.d(tag, "Inside On Click Continue button");
 			Bundle basket = new Bundle();
 			basket.putInt("difficulty", mDifficultyType);
@@ -59,7 +59,7 @@ public class OneDifficulty extends Activity implements OnClickListener,
 			startActivity(Continue);
 		break;
 		
-		case R.id.bHighScores:
+		case R.id.b_tys_HighScores:
 			Intent HighScores = new Intent(this, HighScores.class);
 			startActivity(HighScores);
 		break;
@@ -71,17 +71,24 @@ public class OneDifficulty extends Activity implements OnClickListener,
 	public void onCheckedChanged(RadioGroup group, int checkedId) {
 		
 		switch(checkedId){
-		case R.id.RbEasy:
+		case R.id.Rb_tys_Easy:
 			mDifficultyType = EASY;
 		break;
-		case R.id.RbMedium:
+		case R.id.Rb_tys_Medium:
 			mDifficultyType = MEDIUM;
 		break;
-		case R.id.RbHard:
+		case R.id.Rb_tys_Hard:
 			mDifficultyType = HARD;
 		break;
 		}
 
+	}
+
+	@Override
+	protected void onPause() {
+	
+		super.onPause();
+		finish();
 	}
 
 }

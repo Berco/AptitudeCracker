@@ -24,12 +24,12 @@ public class More extends Activity implements OnClickListener{
 
 	private void initialize() {
 		
-		bUpgrade = (Button) findViewById(R.id.bUpgrade);
-		bAbout = (Button) findViewById(R.id.bAbout);
-		bReportBug = (Button) findViewById(R.id.bReport);
-		bReview = (Button) findViewById(R.id.bReview);
-		bSuggestions = (Button) findViewById(R.id.bSuggestions);
-		bLikeUs = (Button) findViewById(R.id.bLikeUs);
+		bUpgrade = (Button) findViewById(R.id.b_more_Upgrade);
+		bAbout = (Button) findViewById(R.id.b_more_About);
+		bReportBug = (Button) findViewById(R.id.b_more_Report);
+		bReview = (Button) findViewById(R.id.b_more_Review);
+		bSuggestions = (Button) findViewById(R.id.b_more_Suggestions);
+		bLikeUs = (Button) findViewById(R.id.b_more_LikeUs);
 
 		bUpgrade.setOnClickListener(this);
 		bAbout.setOnClickListener(this);
@@ -44,27 +44,27 @@ public class More extends Activity implements OnClickListener{
 		
 		switch(v.getId()){
 		
-		case R.id.bUpgrade:
+		case R.id.b_more_Upgrade:
 			Intent upgrade = new Intent(this, Upgrade.class);
 			startActivity(upgrade);
 		break;
-		case R.id.bAbout:
+		case R.id.b_more_About:
 			Intent about = new Intent(this, AboutUs.class);
 			startActivity(about);
 		break;
-		case R.id.bReport:
+		case R.id.b_more_Report:
 			Intent report = new Intent(this, Report.class);
 			startActivity(report);
 		break;
-		case R.id.bReview:
+		case R.id.b_more_Review:
 			Intent review = new Intent(this, Review.class);
 			startActivity(review);
 		break;
-		case R.id.bSuggestions:
+		case R.id.b_more_Suggestions:
 			Intent suggestions = new Intent(this, Suggest.class);
 			startActivity(suggestions);
 		break;
-		case R.id.bLikeUs:
+		case R.id.b_more_LikeUs:
 			Intent likeus = new Intent(this, LikeUs.class);
 			startActivity(likeus);
 		break;

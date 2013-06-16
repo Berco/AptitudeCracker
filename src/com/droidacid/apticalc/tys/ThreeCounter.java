@@ -52,9 +52,9 @@ public class ThreeCounter extends Activity {
 		mQuestions = QuestionType.getInt("questionType", 0);
 				
 
-		TvNumberOfQues = (TextView) findViewById(R.id.TvNumberOfQues);
-		TvDifficultyType = (TextView) findViewById(R.id.TvDifficultyType);
-		TvQuestionsType = (TextView) findViewById(R.id.TvQuestionsType);
+		TvNumberOfQues = (TextView) findViewById(R.id.Tv_tys_NumberOfQues);
+		TvDifficultyType = (TextView) findViewById(R.id.Tv_tys_DifficultyType);
+		TvQuestionsType = (TextView) findViewById(R.id.Tv_tys_QuestionsType);
 
 	}
 
@@ -97,7 +97,7 @@ public class ThreeCounter extends Activity {
 
 	private void counterTimer() {
 		final Handler handler = new Handler();
-		final TextView TvCounter = (TextView) findViewById(R.id.TvCounter);
+		final TextView TvCounter = (TextView) findViewById(R.id.Tv_tys_Counter);
 		final java.util.concurrent.atomic.AtomicInteger n = new AtomicInteger(3);
 		final Context ThisContext = this;
 		

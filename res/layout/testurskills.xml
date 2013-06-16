@@ -7,7 +7,7 @@
     android:padding="10dp" >
 
     <TextView
-        android:id="@+id/TvTestUrSkills"
+        android:id="@+id/Tv_tys_TestUrSkills"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:layout_alignParentTop="true"
@@ -19,7 +19,7 @@
         android:textSize="30sp" />
 
     <TextView
-        android:id="@+id/TvAbility"
+        android:id="@+id/Tv_tys_Ability"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_below="@+id/TvTestUrSkills"
@@ -30,7 +30,7 @@
         android:textColor="@color/DarkGray" />
 
     <TextView
-        android:id="@+id/TvDifficultyType"
+        android:id="@+id/Tv_tys_DifficultyType"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:layout_below="@+id/TvAbility"
@@ -40,7 +40,7 @@
         android:textSize="18sp" />
 
     <RadioGroup
-        android:id="@+id/RgDiffLevel"
+        android:id="@+id/Rg_tys_DiffLevel"
         style="@style/RGStyle"
         android:layout_below="@+id/TvDifficultyType"
         android:layout_marginTop="5dp"
@@ -48,7 +48,7 @@
         android:orientation="horizontal" >
 
         <RadioButton
-            android:id="@+id/RbEasy"
+            android:id="@+id/Rb_tys_Easy"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_marginRight="5dp"
@@ -56,14 +56,14 @@
             android:text="@string/easy" />
 
         <RadioButton
-            android:id="@+id/RbMedium"
+            android:id="@+id/Rb_tys_Medium"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_marginRight="5dp"
             android:text="@string/medium" />
 
         <RadioButton
-            android:id="@+id/RbHard"
+            android:id="@+id/Rb_tys_Hard"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_marginRight="5dp"
@@ -71,7 +71,7 @@
     </RadioGroup>
 
     <Button
-        android:id="@+id/BContinue"
+        android:id="@+id/B_tys_Continue"
         style="@style/ButtonStyle"
         android:layout_width="wrap_content"
         android:layout_below="@+id/RgDiffLevel"
@@ -80,7 +80,7 @@
         android:text="@string/next" />
 
     <Button
-        android:id="@+id/BHighScores"
+        android:id="@+id/B_tys_HighScores"
         style="@style/ButtonStyle"
         android:layout_width="wrap_content"
         android:layout_alignParentBottom="true"

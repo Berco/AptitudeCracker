@@ -9,7 +9,7 @@
     android:paddingTop="@dimen/activity_vertical_margin" >
 
     <TextView
-        android:id="@+id/TvTimer"
+        android:id="@+id/Tv_tys_Timer"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_alignParentRight="true"
@@ -20,7 +20,7 @@
         android:textAppearance="?android:attr/textAppearanceMedium" />
 
     <LinearLayout
-        android:id="@+id/LMain"
+        android:id="@+id/L_tys_Main"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:layout_alignParentTop="true"
@@ -29,7 +29,7 @@
         android:padding="5dp" >
 
         <TextView
-            android:id="@+id/TvQuestions"
+            android:id="@+id/Tv_tys_Questions"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_weight=".75"
@@ -39,7 +39,7 @@
             android:textSize="28sp" />
 
         <TextView
-            android:id="@+id/TvNumberOfQuestions"
+            android:id="@+id/Tv_tys_NumberOfQuestions"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_weight=".25"
@@ -48,7 +48,7 @@
     </LinearLayout>
 
     <TableRow
-        android:id="@+id/TrEdit"
+        android:id="@+id/Tr_tys_Edit"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:layout_below="@+id/LMain"
@@ -56,7 +56,7 @@
         android:padding="4dp" >
 
         <TextView
-            android:id="@+id/TvAnswers"
+            android:id="@+id/Tv_tys_Answers"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:clickable="false"
@@ -67,7 +67,7 @@
     </TableRow>
 
     <TableLayout
-        android:id="@+id/TL1"
+        android:id="@+id/TL_tys_1"
         android:layout_width="fill_parent"
         android:layout_height="wrap_content"
         android:layout_below="@+id/TrEdit"
@@ -75,7 +75,7 @@
         android:padding="4dp" >
 
         <TableRow
-            android:id="@+id/TR1"
+            android:id="@+id/TR_tys_1"
             android:layout_width="fill_parent"
             android:layout_height="wrap_content"
             android:padding="1dp" >

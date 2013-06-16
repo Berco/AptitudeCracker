@@ -15,12 +15,14 @@ import android.widget.ListView;
 import android.widget.TextView;
 import android.widget.Toast;
 
-public class TipsNdTricks extends ListActivity {
-
-	String Tips[] = { "Maths Magic", "Addition", "Subtraction", "Multiplication", "Division", "Multiply By 11", "Multiply By 12", "Division By 9", "Square Of 2 Digits"
+public class TipsAndTricks extends ListActivity {
+	String tag = "TipsAndTricks Class";
+	String Tips[] = { "Maths Magic", "Addition", "Subtraction", "Multiplication", "Division", "Multiply By 11", "Multiply By 12", 
+			"Division By 9", "Square Of 2 Digits"
 	};
 	String files[] = { "tips/TnT_AddingTime.html", "tips/TnT_AddingTime.html", "tips/TnT_AddingTime.html", "tips/TnT_AddingTime.html",
-			"tips/TnT_AddingTime.html", "tips/TnT_AddingTime.html", "tips/TnT_AddingTime.html", "tips/TnT_AddingTime.html", "tips/TnT_AddingTime.html"
+			"tips/TnT_AddingTime.html", "tips/TnT_AddingTime.html", "tips/TnT_AddingTime.html", "tips/TnT_AddingTime.html",
+			"tips/TnT_AddingTime.html"
 	};
 
 	TextView TvTips;
@@ -41,8 +43,6 @@ public class TipsNdTricks extends ListActivity {
 	
 	}
 	
-	
-	
 	@Override
 	protected void onListItemClick(ListView l, View v, int position, long id) {
 		super.onListItemClick(l, v, position, id);
@@ -52,8 +52,6 @@ public class TipsNdTricks extends ListActivity {
 		Spanned inHtmlCC = Html.fromHtml(getTipsText(files[position]));
 	    TvTips.setText(inHtmlCC);
 	}
-
-	
 	
 	public String getTipsText(String filename){
 		InputStream is= null;

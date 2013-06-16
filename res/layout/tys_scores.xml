@@ -6,7 +6,7 @@
     android:orientation="vertical" >
 
     <TextView
-        android:id="@+id/TvRightAnswers"
+        android:id="@+id/Tv_tys_RightAnswers"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:padding="20dp"
@@ -15,7 +15,7 @@
         android:textSize="28sp" />
 
     <TextView
-        android:id="@+id/TvWrongAnswers"
+        android:id="@+id/Tv_tys_WrongAnswers"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:padding="20dp"
@@ -24,7 +24,7 @@
         android:textSize="28sp" />
 
     <TextView
-        android:id="@+id/TvTotalScore"
+        android:id="@+id/Tv_tys_TotalScore"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:padding="20dp"
@@ -32,13 +32,13 @@
         android:textSize="28sp" />
 
     <Button
-        android:id="@+id/bHighScores"
+        android:id="@+id/b_tys_HighScores"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:text="@string/high_scores" />
 
     <Button
-        android:id="@+id/bPlayAgain"
+        android:id="@+id/b_tys_PlayAgain"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:text="@string/play_again" />

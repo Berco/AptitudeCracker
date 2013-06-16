@@ -39,11 +39,11 @@ public class TwoLevel extends Activity implements OnClickListener {
 		
 		
 
-		BAdd = (Button) findViewById(R.id.BAddition);
-		BSubtract = (Button) findViewById(R.id.BSubtraction);
-		BMultiply = (Button) findViewById(R.id.BMultiplication);
-		BDivide = (Button) findViewById(R.id.BDivision);
-		BAll = (Button) findViewById(R.id.BAll);
+		BAdd = (Button) findViewById(R.id.B_tys_Addition);
+		BSubtract = (Button) findViewById(R.id.B_tys_Subtraction);
+		BMultiply = (Button) findViewById(R.id.B_tys_Multiplication);
+		BDivide = (Button) findViewById(R.id.B_tys_Division);
+		BAll = (Button) findViewById(R.id.B_tys_All);
 
 		BAdd.setOnClickListener(this);
 		BSubtract.setOnClickListener(this);
@@ -65,23 +65,23 @@ public class TwoLevel extends Activity implements OnClickListener {
 					
 		switch (v.getId()) {
 
-		case R.id.BAddition:
+		case R.id.B_tys_Addition:
 			mQuestions = ADDITION;
 			Counter.putExtras(QuestionType);
 			break;
-		case R.id.BSubtraction:
+		case R.id.B_tys_Subtraction:
 			mQuestions = SUBTRACT;
 			Counter.putExtras(QuestionType);
 			break;
-		case R.id.BMultiplication:
+		case R.id.B_tys_Multiplication:
 			mQuestions = MULTIPLY;
 			Counter.putExtras(QuestionType);
 			break;
-		case R.id.BDivision:
+		case R.id.B_tys_Division:
 			mQuestions = DIVIDE;
 			Counter.putExtras(QuestionType);
 			break;
-		case R.id.BAll:
+		case R.id.B_tys_All:
 			mQuestions = ALL;
 			Counter.putExtras(QuestionType);
 			break;
@@ -90,6 +90,12 @@ public class TwoLevel extends Activity implements OnClickListener {
 		Counter.putExtras(QuestionType);
 		startActivity(Counter);
 
+	}
+	@Override
+	protected void onPause() {
+		// TODO Auto-generated method stub
+		super.onPause();
+		finish();
 	}
 
 }

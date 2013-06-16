@@ -3,6 +3,7 @@ package com.droidacid.apticalc.tys;
 import com.droidacid.apticalc.R;
 
 import android.app.Activity;
+import android.content.Intent;
 import android.os.Bundle;
 import android.util.Log;
 import android.view.View;
@@ -30,13 +31,14 @@ public class TYSScores extends Activity implements OnClickListener {
 
 	private void initialize() {
 
-		RightAnswers = (TextView) findViewById(R.id.TvRightAnswers);
-		WrongAnswers = (TextView) findViewById(R.id.TvWrongAnswers);
-		TotalScore = (TextView) findViewById(R.id.TvTotalScore);
-		bHighScores = (Button) findViewById(R.id.bHighScores);
-		bPlayAgain = (Button) findViewById(R.id.bPlayAgain);
+		RightAnswers = (TextView) findViewById(R.id.Tv_tys_RightAnswers);
+		WrongAnswers = (TextView) findViewById(R.id.Tv_tys_WrongAnswers);
+		TotalScore = (TextView) findViewById(R.id.Tv_tys_TotalScore);
+		bHighScores = (Button) findViewById(R.id.b_tys_HighScores);
+		bPlayAgain = (Button) findViewById(R.id.b_tys_PlayAgain);
 		
 		bHighScores.setOnClickListener(this);
+		bPlayAgain.setOnClickListener(this);
 		
 		Bundle getScore = getIntent().getExtras();
 		rightAns = getScore.getInt("rightanswers");
@@ -69,11 +71,13 @@ public class TYSScores extends Activity implements OnClickListener {
 	@Override
 	public void onClick(View v) {
 		switch(v.getId()){
-		case R.id.bHighScores:
+		case R.id.b_tys_HighScores:
 			
 		break;
-		case R.id.bPlayAgain:
+		case R.id.b_tys_PlayAgain:
 			
+			Intent playAgain = new Intent(this, OneDifficulty.class);
+			startActivity(playAgain);
 		break;
 		}
 	}

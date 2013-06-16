@@ -7,47 +7,42 @@
     android:orientation="vertical"
     android:padding="10dp" >
 
-        <TextView
-            android:id="@+id/TvNumberOfQues"
-            android:layout_width="fill_parent"
-            android:layout_height="wrap_content"
-            android:gravity="center"
-            android:paddingTop="10dp"
-            android:text="20 Questions"
-            android:textSize="33sp" />
+    <TextView
+        android:id="@+id/Tv_tys_NumberOfQues"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:paddingTop="10dp"
+        android:textSize="33sp" />
 
-        <TextView
-            android:id="@+id/TvDifficultyType"
-            android:layout_width="fill_parent"
-            android:layout_height="wrap_content"
-            android:gravity="center"
-            android:paddingTop="18dp"
-            android:text="Medium"
-            android:textColor="#ff999999"
-            android:textSize="33sp"
-            android:visibility="visible" />
+    <TextView
+        android:id="@+id/Tv_tys_DifficultyType"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:paddingTop="18dp"
+        android:textColor="#ff999999"
+        android:textSize="33sp"
+        android:visibility="visible" />
 
-        <TextView
-            android:id="@+id/TvQuestionsType"
-            android:layout_width="fill_parent"
-            android:layout_height="wrap_content"
-            android:gravity="center"
-            android:paddingTop="18dp"
-            android:text="Addition"
-            android:textColor="#ff646060"
-            android:textSize="25.0dip" />
+    <TextView
+        android:id="@+id/Tv_tys_QuestionsType"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:paddingTop="18dp"
+        android:textColor="#ff646060"
+        android:textSize="25.0dip" />
 
-        <TextView
-            android:id="@+id/TvCounter"
-            android:layout_width="fill_parent"
-            android:layout_height="fill_parent"
-            android:layout_gravity="top"
-            android:layout_marginBottom="4.0dip"
-            android:gravity="center"
-            android:text="3"
-            android:textColor="#ff646060"
-            android:textSize="100sp"
-            android:typeface="serif" />
-    
+    <TextView
+        android:id="@+id/Tv_tys_Counter"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:layout_gravity="top"
+        android:layout_marginBottom="4.0dip"
+        android:gravity="center"
+        android:textColor="#ff646060"
+        android:textSize="100sp"
+        android:typeface="serif" />
 
 </LinearLayout>

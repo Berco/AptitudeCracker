@@ -82,10 +82,10 @@ public class FourCalculation extends Activity implements OnClickListener {
 		if (mQuestions == ALL)
 			QuestionType = "All";
 
-		TvQuestions = (TextView) findViewById(R.id.TvQuestions);
-		TvTimer = (TextView) findViewById(R.id.TvTimer);
-		TvAnswers = (TextView) findViewById(R.id.TvAnswers);
-		TvNumberOfQuestions = (TextView) findViewById(R.id.TvNumberOfQuestions);
+		TvQuestions = (TextView) findViewById(R.id.Tv_tys_Questions);
+		TvTimer = (TextView) findViewById(R.id.Tv_tys_Timer);
+		TvAnswers = (TextView) findViewById(R.id.Tv_tys_Answers);
+		TvNumberOfQuestions = (TextView) findViewById(R.id.Tv_tys_NumberOfQuestions);
 
 		BOne = (Button) findViewById(R.id.B1);
 		BTwo = (Button) findViewById(R.id.B2);

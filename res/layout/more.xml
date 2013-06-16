@@ -7,49 +7,49 @@
     android:padding="20dp" >
 
     <Button
-        android:id="@+id/bUpgrade"
+        android:id="@+id/b_more_Upgrade"
         android:layout_width="fill_parent"
         style="@style/ButtonStyle"
         android:padding="5dp"
         android:text="@string/upgrade_to_pro" />
     
     <Button
-        android:id="@+id/bAbout"
+        android:id="@+id/b_more_About"
         android:layout_width="fill_parent"
         style="@style/ButtonStyle"
         android:padding="5dp"
         android:text="@string/about_this_app" />
 
     <Button
-        android:id="@+id/bReport"
+        android:id="@+id/b_more_Report"
         android:layout_width="match_parent"
         style="@style/ButtonStyle"
         android:padding="5dp"
         android:text="@string/report_a_bug" />
 
     <Button
-        android:id="@+id/bReview"
+        android:id="@+id/b_more_Review"
         android:layout_width="match_parent"
         style="@style/ButtonStyle"
         android:padding="5dp"
         android:text="@string/review_this_app_" />
     
     <Button
-        android:id="@+id/bSuggestions"
+        android:id="@+id/b_more_Suggestions"
         android:layout_width="match_parent"
         style="@style/ButtonStyle"
         android:padding="5dp"
         android:text="@string/give_suggestions" />
 
     <Button
-        android:id="@+id/bLikeUs"
+        android:id="@+id/b_more_LikeUs"
         android:layout_width="match_parent"
         style="@style/ButtonStyle"
         android:padding="5dp"
         android:text="@string/like_us_on_facebook" />
 
     <TextView
-        android:id="@+id/TvVersion"
+        android:id="@+id/Tv_more_Version"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_gravity="center"

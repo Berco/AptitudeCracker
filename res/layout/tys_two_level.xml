@@ -11,7 +11,7 @@
         android:padding="10dp" >
 
         <Button
-            android:id="@+id/BAddition"
+            android:id="@+id/B_tys_Addition"
             android:layout_height="wrap_content"
             android:layout_width="match_parent"
             android:padding="10dp"
@@ -24,7 +24,7 @@
         android:padding="10dp" >
 
         <Button
-            android:id="@+id/BSubtraction"
+            android:id="@+id/B_tys_Subtraction"
             android:layout_height="wrap_content"
             android:layout_width="match_parent"
             android:padding="10dp"
@@ -37,7 +37,7 @@
         android:padding="10dp" >
 
         <Button
-            android:id="@+id/BMultiplication"
+            android:id="@+id/B_tys_Multiplication"
             android:layout_height="wrap_content"
             android:layout_width="match_parent"
             android:padding="10dp"
@@ -50,7 +50,7 @@
         android:padding="10dp" >
 
         <Button
-            android:id="@+id/BDivision"
+            android:id="@+id/B_tys_Division"
             android:layout_height="wrap_content"
             android:layout_width="match_parent"
             android:padding="10dp"
@@ -63,7 +63,7 @@
         android:padding="10dp" >
 
         <Button
-            android:id="@+id/BAll"
+            android:id="@+id/B_tys_All"
             android:layout_height="wrap_content"
             android:layout_width="match_parent"
             android:padding="10dp"
