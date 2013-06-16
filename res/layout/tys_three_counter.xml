@@ -1,35 +1,30 @@
 <?xml version="1.0" encoding="utf-8"?>
 <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
-    android:layout_width="fill_parent"
-    android:layout_height="fill_parent"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
     android:layout_marginTop="5.0dip"
     android:gravity="center_horizontal"
-    android:orientation="vertical" >
-
-    <LinearLayout
-        android:layout_width="match_parent"
-        android:layout_height="match_parent"
-        android:orientation="vertical"
-        android:padding="10dp" >
+    android:orientation="vertical"
+    android:padding="10dp" >
 
         <TextView
             android:id="@+id/TvNumberOfQues"
             android:layout_width="fill_parent"
             android:layout_height="wrap_content"
             android:gravity="center"
-            android:paddingTop="10.0dip"
+            android:paddingTop="10dp"
             android:text="20 Questions"
-            android:textSize="50.0dip" />
+            android:textSize="33sp" />
 
         <TextView
             android:id="@+id/TvDifficultyType"
             android:layout_width="fill_parent"
             android:layout_height="wrap_content"
             android:gravity="center"
-            android:paddingTop="20.0dip"
+            android:paddingTop="18dp"
             android:text="Medium"
             android:textColor="#ff999999"
-            android:textSize="37.5dip"
+            android:textSize="33sp"
             android:visibility="visible" />
 
         <TextView
@@ -37,7 +32,7 @@
             android:layout_width="fill_parent"
             android:layout_height="wrap_content"
             android:gravity="center"
-            android:paddingTop="30.0dip"
+            android:paddingTop="18dp"
             android:text="Addition"
             android:textColor="#ff646060"
             android:textSize="25.0dip" />
@@ -51,8 +46,8 @@
             android:gravity="center"
             android:text="3"
             android:textColor="#ff646060"
-            android:textSize="190.0dip"
+            android:textSize="100sp"
             android:typeface="serif" />
-    </LinearLayout>
+    
 
 </LinearLayout>

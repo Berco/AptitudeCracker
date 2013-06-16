@@ -1,5 +1,5 @@
 package com.droidacid.apticalc.tys;
 
-public class TYSHighScores {
+public class HighScores {
 
 }

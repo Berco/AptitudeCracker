@@ -12,7 +12,7 @@
 
         <Button
             android:id="@+id/BAddition"
-            style="@style/ButtonStyle"
+            android:layout_height="wrap_content"
             android:layout_width="match_parent"
             android:padding="10dp"
             android:text="Addition" />
@@ -25,7 +25,7 @@
 
         <Button
             android:id="@+id/BSubtraction"
-            style="@style/ButtonStyle"
+            android:layout_height="wrap_content"
             android:layout_width="match_parent"
             android:padding="10dp"
             android:text="Subtraction" />
@@ -38,7 +38,7 @@
 
         <Button
             android:id="@+id/BMultiplication"
-            style="@style/ButtonStyle"
+            android:layout_height="wrap_content"
             android:layout_width="match_parent"
             android:padding="10dp"
             android:text="Multiplication" />
@@ -51,7 +51,7 @@
 
         <Button
             android:id="@+id/BDivision"
-            style="@style/ButtonStyle"
+            android:layout_height="wrap_content"
             android:layout_width="match_parent"
             android:padding="10dp"
             android:text="Division" />
@@ -64,7 +64,7 @@
 
         <Button
             android:id="@+id/BAll"
-            style="@style/ButtonStyle"
+            android:layout_height="wrap_content"
             android:layout_width="match_parent"
             android:padding="10dp"
             android:text="All Of The Above" />
