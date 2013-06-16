@@ -1,7 +1,6 @@
 package com.droidacid.apticalc.tipsandtricks;
 
 import com.droidacid.apticalc.R;
-
 import android.content.Context;
 import android.view.LayoutInflater;
 import android.view.View;
@@ -41,9 +40,8 @@ public class TipsListAdapter extends ArrayAdapter<String> {
         
         String data = this.getItem(position);
         ((TextView)view.findViewById(R.id.tv_tat_listitem)).setText(data);
-       
-        
+		
         return view;
-    }    
+    }
     
 }
