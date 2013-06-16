@@ -11,10 +11,8 @@
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:ems="10"
-        android:paddingTop="20dp"
-        android:hint="@string/Et1stnum" >
-
-
+        android:hint="@string/Et1stnum"
+        android:paddingTop="20dp" >
     </EditText>
 
     <EditText
@@ -22,21 +20,32 @@
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:ems="10"
-        android:paddingTop="20dp"
-        android:hint="@string/Et2ndnum" />
+        android:hint="@string/Et2ndnum"
+        android:paddingTop="20dp" />
 
-    <EditText
+    <!--
+         <EditText
         android:id="@+id/Et_apti_Hcf3"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:ems="10"
         android:paddingTop="20dp"
         android:hint="@string/Et3rdnum" />
+    -->
+
+    <TextView
+        android:id="@+id/Tv_apti_LcmResult"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
+        android:gravity="center"
+        android:textAppearance="?android:attr/textAppearanceMedium"
+        android:textSize="22sp" />
 
     <Button
         android:id="@+id/B_apti_calcHCF"
-        android:layout_width="match_parent"
         style="@style/ButtonStyle"
+        android:layout_width="match_parent"
         android:layout_marginTop="30dp"
         android:text="@string/calc" />
 
