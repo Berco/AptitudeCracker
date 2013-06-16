@@ -2,6 +2,7 @@ package com.droidacid.apticalc.more;
 
 import android.app.Activity;
 import android.content.Intent;
+import android.net.Uri;
 import android.os.Bundle;
 import android.view.View;
 import android.view.View.OnClickListener;
@@ -12,7 +13,8 @@ import com.droidacid.apticalc.R;
 public class More extends Activity implements OnClickListener{
 
 	Button bUpgrade, bAbout, bReportBug, bReview, bSuggestions, bLikeUs;
-	
+	String urlSuggest = "http://www.droidacid.com/suggestions/";
+	String likeUs = "http://www.facebook.com/AptitudeCrackerApp/";
 	
 	@Override
 	protected void onCreate(Bundle savedInstanceState) {
@@ -61,11 +63,13 @@ public class More extends Activity implements OnClickListener{
 			startActivity(review);
 		break;
 		case R.id.b_more_Suggestions:
-			Intent suggestions = new Intent(this, Suggest.class);
+			Intent suggestions = new Intent(android.content.Intent.ACTION_VIEW);
+			suggestions.setData(Uri.parse(urlSuggest));
 			startActivity(suggestions);
 		break;
 		case R.id.b_more_LikeUs:
-			Intent likeus = new Intent(this, LikeUs.class);
+			Intent likeus = new Intent(android.content.Intent.ACTION_VIEW);
+			likeus.setData(Uri.parse(likeUs));
 			startActivity(likeus);
 		break;
 		

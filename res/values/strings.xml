@@ -159,5 +159,10 @@
     <string name="version">Version 1.0</string>
     <string name="aboutUs">Hello friends I am a Computer Science Engineer and this is my first Android App.\nI have worked day and night on this app and hope you guys will like it.\nIf you have to report and bug or have suggestions then please send me an email on \'makewaysforshivam@gmail.com\'.\nIf you have some tricks and want me to add them in my app then shoot an email on the above email address.</string>
     <string name="play_again">Play again!</string>
+    <string name="enter_your_name">Enter Your Name</string>
+    <string name="subject">Subject</string>
+    <string name="location">Location</string>
+    <string name="your_reviews_and_suggestions">Your reviews and suggestions</string>
+    <string name="send_mail">Send Mail</string>
 
 </resources>

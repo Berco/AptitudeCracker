@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:padding="10dp" >
+
+    <EditText
+        android:id="@+id/Et_more_Name"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="@string/enter_your_name"
+        android:inputType="textPersonName"
+        android:padding="10dp"
+        android:textSize="22sp" >
+
+        <requestFocus />
+    </EditText>
+
+    <EditText
+        android:id="@+id/Et_more_Subject"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:ems="10"
+        android:hint="@string/subject" />
+
+    <EditText
+        android:id="@+id/Et_more_Location"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:ems="10"
+        android:hint="@string/location"
+        android:padding="10dp" />
+
+    <EditText
+        android:id="@+id/Et_more_Body"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="@string/your_reviews_and_suggestions"
+        android:inputType="textPostalAddress"
+        android:maxLines="20"
+        android:padding="10dp" />
+
+    <Button
+        android:id="@+id/b_more_SendMail"
+        style="@style/ButtonStyle"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:layout_marginTop="15dp"
+        android:padding="10dp"
+        android:text="@string/send_mail" />
+
+</LinearLayout>
