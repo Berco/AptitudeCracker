@@ -1,9 +1,6 @@
 package com.droidacid.apticalc.aptitudes;
 
 import com.droidacid.apticalc.R;
-import com.droidacid.apticalc.R.id;
-import com.droidacid.apticalc.R.layout;
-
 import android.app.Activity;
 
 import android.content.Intent;
