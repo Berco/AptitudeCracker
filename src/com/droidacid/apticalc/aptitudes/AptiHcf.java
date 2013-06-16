@@ -77,15 +77,7 @@ public class AptiHcf extends Activity implements View.OnClickListener {
 	@Override
 	public void onClick(View v) {
 
-		if (EtNumber1.getText().toString().equals(""))
-			EtNumber1.setText("0");
-		if (EtNumber2.getText().toString().equals(""))
-			EtNumber2.setText("0");
-		// if (num3.getText().toString().equals("")) num3.setText("0");
-
-		Double numb1 = Double.parseDouble(EtNumber1.getText().toString());
-		Double numb2 = Double.parseDouble(EtNumber2.getText().toString());
-		// Double numb3 = Double.parseDouble(num3.getText().toString());
+		switch
 
 	}
 }

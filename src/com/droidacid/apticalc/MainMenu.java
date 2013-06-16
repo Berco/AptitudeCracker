@@ -45,7 +45,7 @@ public class MainMenu extends Activity implements android.view.View.OnClickListe
 		
 		switch(v.getId())
 		{
-		case R.id.bapticalc:
+		case R.id.b_main_apticalc:
 			
 			Intent Apti = new Intent(this, AptiCalc.class);
 			startActivity(Apti);

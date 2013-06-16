@@ -5,21 +5,49 @@
     android:orientation="vertical"
     android:padding="10dp" >
 
+    <EditText
+        android:id="@+id/Et_apti_Num1"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="15dp"
+        android:ems="10"
+        android:hint="@string/Et1stnum"
+        android:inputType="number" />
+
+    <EditText
+        android:id="@+id/Et_apti_Num2"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:layout_marginTop="15dp"
+        android:ems="10"
+        android:hint="@string/Et2ndnum"
+        android:inputType="number" />
+
+    <!-- <EditText
+        android:id="@+id/Et_apti_Num33"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="15dp"
+        android:ems="10"
+        android:hint="@string/Et3rdnum"
+        android:inputType="number" /> -->
+
     <Button
         android:id="@+id/b_apti_Lcm"
-        android:layout_width="match_parent"
         style="@style/ButtonStyle"
+        android:layout_width="match_parent"
         android:layout_gravity="center"
-        android:layout_marginTop="100dp"
+        android:layout_marginTop="30dp"
         android:text="@string/LCM"
         android:textSize="22sp" />
 
     <Button
         android:id="@+id/b_apti_Hcf"
-        android:layout_width="match_parent"
         style="@style/ButtonStyle"
+        android:layout_width="match_parent"
         android:layout_gravity="center"
-        android:layout_marginTop="50dp"
+        android:layout_marginTop="20dp"
         android:text="@string/HFC"
         android:textSize="22sp" />
 
