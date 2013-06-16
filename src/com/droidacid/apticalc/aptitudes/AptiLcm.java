@@ -23,10 +23,10 @@ public class AptiLcm extends Activity implements View.OnClickListener {
 	}
 
 	protected void initialize() {
-		calculate = (Button) findViewById(R.id.bLcm);
-		EtNumber1 = (EditText) findViewById(R.id.EtLcm1);
-		EtNumber2 = (EditText) findViewById(R.id.EtLcm2);
-		EtNumber3 = (EditText) findViewById(R.id.EtLcm3);
+		calculate = (Button) findViewById(R.id.b_apti_Lcm);
+		EtNumber1 = (EditText) findViewById(R.id.Et_apti_Lcm1);
+		EtNumber2 = (EditText) findViewById(R.id.Et_apti_Lcm2);
+		EtNumber3 = (EditText) findViewById(R.id.Et_apti_Lcm3);
 
 		calculate.setOnClickListener(this);
 	}

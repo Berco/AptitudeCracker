@@ -23,11 +23,11 @@ public class AptiPercent extends Activity implements android.view.View.OnClickLi
 		super.onCreate(savedInstanceState);
 		setContentView(R.layout.aptipercent);
 		
-		numerator = (EditText) findViewById(R.id.numerator);
-		denominator = (EditText) findViewById(R.id.denominator);
-		bpercent = (Button) findViewById(R.id.calcPercent);
-		output = (TextView) findViewById(R.id.output);
-        percentvalue = (Button) findViewById(R.id.BcalcPercent);
+		numerator = (EditText) findViewById(R.id.Et_apti_numerator);
+		denominator = (EditText) findViewById(R.id.Et_apti_denominator);
+		bpercent = (Button) findViewById(R.id.b_apti_calcPercent);
+		output = (TextView) findViewById(R.id.Tv_apti_output);
+        percentvalue = (Button) findViewById(R.id.b_apti_calcValue);
 
 		bpercent.setOnClickListener(this);
         percentvalue.setOnClickListener(this);
@@ -47,7 +47,7 @@ public class AptiPercent extends Activity implements android.view.View.OnClickLi
                 String result = num + " is " + (Double.toString((num / den) * 100)) + " % of " + den;
                 output.setText(result);
             break;
-            case R.id.BcalcPercent:
+            case R.id.b_apti_calcValue:
             	Intent PercentValue = new Intent(this, AptiPerValue.class);
                 startActivity(PercentValue);
             break;

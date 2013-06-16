@@ -6,7 +6,7 @@
     android:padding="10dp" >
 
     <Button
-        android:id="@+id/bsimpleint"
+        android:id="@+id/b_apti_simpleint"
         style="@style/ButtonStyle"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
@@ -15,7 +15,7 @@
         android:textSize="22sp" />
 
     <Button
-        android:id="@+id/bcompoundint"
+        android:id="@+id/b_apti_compoundint"
         style="@style/ButtonStyle"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"

@@ -24,10 +24,10 @@ public class AptiHcf extends Activity implements View.OnClickListener {
 	}
 
 	protected void initialize() {
-		calculate = (Button) findViewById(R.id.bHcf);
-		EtNumber1 = (EditText) findViewById(R.id.EtHcf1);
-		EtNumber2 = (EditText) findViewById(R.id.EtHcf2);
-		EtNumber3 = (EditText) findViewById(R.id.EtHcf3);
+		calculate = (Button) findViewById(R.id.b_apti_Hcf);
+		EtNumber1 = (EditText) findViewById(R.id.Et_apti_Hcf1);
+		EtNumber2 = (EditText) findViewById(R.id.Et_apti_Hcf2);
+		EtNumber3 = (EditText) findViewById(R.id.Et_apti_Hcf3);
 
 		calculate.setOnClickListener(this);
 	}

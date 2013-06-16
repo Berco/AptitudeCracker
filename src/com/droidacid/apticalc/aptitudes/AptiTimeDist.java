@@ -3,7 +3,6 @@ package com.droidacid.apticalc.aptitudes;
 import com.droidacid.apticalc.R;
 import android.app.Activity;
 import android.os.Bundle;
-import android.util.Log;
 import android.view.View;
 import android.view.View.OnClickListener;
 import android.widget.Button;
@@ -30,15 +29,15 @@ public class AptiTimeDist extends Activity implements OnClickListener, OnChecked
 
 	private void initialize() {
 		
-		BCalc = (Button) findViewById(R.id.BCalcTDS);
-		EtTime = (EditText) findViewById(R.id.EtTime);
-		EtSpeed = (EditText) findViewById(R.id.EtSpeed);
-		EtDistance = (EditText) findViewById(R.id.Etdistance);
-		TvResult = (TextView) findViewById(R.id.TvResult);
-		RgTimeDist = (RadioGroup) findViewById(R.id.RgTimeDist);
+		BCalc = (Button) findViewById(R.id.B_apti_CalcTDS);
+		EtTime = (EditText) findViewById(R.id.Et_apti_Time);
+		EtSpeed = (EditText) findViewById(R.id.Et_apti_Speed);
+		EtDistance = (EditText) findViewById(R.id.Et_apti_distance);
+		TvResult = (TextView) findViewById(R.id.Tv_apti_Result);
+		RgTimeDist = (RadioGroup) findViewById(R.id.Rg_apti_TimeDist);
 		RgTimeDist.setOnCheckedChangeListener(this);
 		BCalc.setOnClickListener(this);
-		Log.d(tag, "Inside Inilialize method of aptiTimeDist class");
+		
 		
 	}
 
@@ -55,22 +54,22 @@ public class AptiTimeDist extends Activity implements OnClickListener, OnChecked
 			Double Time = Double.parseDouble(EtTime.getText().toString());
 			Double Speed = Double.parseDouble(EtSpeed.getText().toString());
 			Double Dist = Double.parseDouble(EtDistance.getText().toString());
-			Log.d(tag, "Button If condition");
+			
 						
 			switch(selectedRB){
-			case R.id.RbTime:
+			case R.id.Rb_apti_Time:
 				TvResult.setText("Time taken = " + Double.toString(Dist / Speed) +" hrs");
-				Log.d(tag, "Inside time condition");
+				
 			break;
 			
-			case R.id.RbSpeed:				
+			case R.id.Rb_apti_Speed:				
 				TvResult.setText("Speed = " + Double.toString(Dist / Time) + " km/hr");
-				Log.d(tag, "Inside speed condition");
+				
 			break;
 			
-			case R.id.RbDistance:
+			case R.id.Rb_apti_Distance:
 				TvResult.setText("Distance = " + Double.toString(Speed * Time) + " km");
-				Log.d(tag, "Inside distance condition");
+				
 			break;
 			}
 		}
@@ -82,23 +81,23 @@ public class AptiTimeDist extends Activity implements OnClickListener, OnChecked
 		
 		switch(TimeDist){
 		
-		case R.id.RbTime:
+		case R.id.Rb_apti_Time:
 			EtTime.setVisibility(View.GONE);
 			EtSpeed.setVisibility(View.VISIBLE);
 			EtDistance.setVisibility(View.VISIBLE);
-			Log.d(tag, "Inside time switch case");
+			
 			break;			
-		case R.id.RbSpeed:
+		case R.id.Rb_apti_Speed:
 			EtSpeed.setVisibility(View.GONE);
 			EtTime.setVisibility(View.VISIBLE);
 			EtDistance.setVisibility(View.VISIBLE);
-			Log.d(tag, "Inside speed switch case");
+			
 			break;
-		case R.id.RbDistance:
+		case R.id.Rb_apti_Distance:
 			EtDistance.setVisibility(View.GONE);
 			EtSpeed.setVisibility(View.VISIBLE);
 			EtTime.setVisibility(View.VISIBLE);
-			Log.d(tag, "Inside distance switch case");
+			
 			break;
 		}
 		

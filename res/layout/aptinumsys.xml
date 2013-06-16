@@ -10,48 +10,48 @@
         android:padding="10dp" >
 
         <EditText
-            android:id="@+id/number1"
+            android:id="@+id/Et_apti_number1"
             style="@style/ETStyle"
             android:hint="@string/num1hint"
             android:inputType="number" >
         </EditText>
 
         <EditText
-            android:id="@+id/number2"
+            android:id="@+id/Et_apti_number2"
             style="@style/ETStyle"
             android:hint="@string/num2hint"
             android:inputType="number" />
 
         <TextView
-            android:id="@+id/output"
+            android:id="@+id/Tv_apti_output"
             style="@style/TVStyle"
             android:gravity="center"
             android:textIsSelectable="true" />
 
         <Button
-            android:id="@+id/badd"
+            android:id="@+id/b_apti_add"
             style="@style/ButtonStyle"
             android:layout_marginTop="20dp"
             android:text="@string/add" />
 
         <Button
-            android:id="@+id/bsub"
+            android:id="@+id/b_apti_sub"
             style="@style/ButtonStyle"
             android:layout_gravity="center"
             android:text="@string/subtract" />
 
         <Button
-            android:id="@+id/bmul"
+            android:id="@+id/b_apti_mul"
             style="@style/ButtonStyle"
             android:text="@string/multiply" />
 
         <Button
-            android:id="@+id/bdiv"
+            android:id="@+id/b_apti_div"
             style="@style/ButtonStyle"
             android:text="@string/divide" />
 
         <Button
-            android:id="@+id/bmod"
+            android:id="@+id/b_apti_mod"
             style="@style/ButtonStyle"
             android:text="@string/mod" />
     </LinearLayout>

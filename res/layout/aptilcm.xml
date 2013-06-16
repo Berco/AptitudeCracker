@@ -6,7 +6,7 @@
     android:padding="10dp" >
 
     <EditText
-        android:id="@+id/EtLcm1"
+        android:id="@+id/Et_apti_Lcm1"
         android:layout_width="fill_parent"
         android:layout_height="wrap_content"
         android:layout_marginTop="15dp"
@@ -15,7 +15,7 @@
         android:inputType="number" />
 
     <EditText
-        android:id="@+id/EtLcm2"
+        android:id="@+id/Et_apti_Lcm2"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:layout_gravity="center"
@@ -25,7 +25,7 @@
         android:inputType="number" />
 
     <EditText
-        android:id="@+id/EtLcm3"
+        android:id="@+id/Et_apti_Lcm3"
         android:layout_width="fill_parent"
         android:layout_height="wrap_content"
         android:layout_marginTop="15dp"
@@ -34,7 +34,7 @@
         android:inputType="number" />
 
     <Button
-        android:id="@+id/BCalcLCM"
+        android:id="@+id/B_apti_CalcLCM"
         style="@style/ButtonStyle"
         android:layout_width="match_parent"
         android:layout_gravity="center"

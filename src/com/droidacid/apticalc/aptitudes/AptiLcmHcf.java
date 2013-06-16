@@ -18,19 +18,19 @@ public class AptiLcmHcf extends Activity implements View.OnClickListener {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.aptilcmhcf);
-        lcm = (Button) findViewById(R.id.bLcm);
-        hcf = (Button) findViewById(R.id.bHcf);
+        lcm = (Button) findViewById(R.id.b_apti_Lcm);
+        hcf = (Button) findViewById(R.id.b_apti_Hcf);
     }
 
     @Override
     public void onClick(View view) {
 
         switch(view.getId()){
-            case R.id.bLcm:
+            case R.id.b_apti_Lcm:
             Intent LCM = new Intent(this, AptiLcm.class);
             startActivity(LCM);
             break;
-            case R.id.bHcf:
+            case R.id.b_apti_Hcf:
             Intent HCF = new Intent(this, AptiHcf.class);
             startActivity(HCF);
             break;

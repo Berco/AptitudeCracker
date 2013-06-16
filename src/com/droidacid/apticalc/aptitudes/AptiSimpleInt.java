@@ -27,11 +27,11 @@ public class AptiSimpleInt extends Activity implements View.OnClickListener {
 
 	private void initialize() {
 
-		EtPrincipal = (EditText) findViewById(R.id.EtPrincipal);
-		EtRate = (EditText) findViewById(R.id.EtRate);
-		EtTime = (EditText) findViewById(R.id.EtTime);
-		calculate = (Button) findViewById(R.id.bCalcSimpleInt);
-		TvAnswer = (TextView) findViewById(R.id.TvAnswer);
+		EtPrincipal = (EditText) findViewById(R.id.Et_apti_Principal);
+		EtRate = (EditText) findViewById(R.id.Et_apti_Rate);
+		EtTime = (EditText) findViewById(R.id.Et_apti_Time);
+		calculate = (Button) findViewById(R.id.b_apti_CalcSimpleInt);
+		TvAnswer = (TextView) findViewById(R.id.Tv_apti_Answer);
 
 		calculate.setOnClickListener(this);
 

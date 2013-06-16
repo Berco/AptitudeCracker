@@ -6,7 +6,7 @@
     android:padding="10dp" >
 
     <EditText
-        android:id="@+id/EtPrincipal"
+        android:id="@+id/Et_apti_Principal"
         android:layout_width="fill_parent"
         android:layout_height="wrap_content"
         android:layout_marginTop="15dp"
@@ -16,7 +16,7 @@
         android:textSize="22sp" />
 
     <EditText
-        android:id="@+id/EtRate"
+        android:id="@+id/Et_apti_Rate"
         android:layout_width="fill_parent"
         android:layout_height="wrap_content"
         android:layout_marginTop="10dp"
@@ -26,7 +26,7 @@
         android:textSize="22sp" />
 
     <EditText
-        android:id="@+id/EtTime"
+        android:id="@+id/Et_apti_Time"
         android:layout_width="fill_parent"
         android:layout_height="wrap_content"
         android:layout_marginTop="10dp"
@@ -37,7 +37,7 @@
         android:textSize="22sp" />
 
     <TextView
-        android:id="@+id/TvAnswer"
+        android:id="@+id/Tv_apti_Answer"
         style="@style/TVStyle"
         android:layout_width="fill_parent"
         android:layout_height="wrap_content"
@@ -45,7 +45,7 @@
         android:textSize="22sp" />
 
     <Button
-        android:id="@+id/bCalcSimpleInt"
+        android:id="@+id/b_apti_CalcSimpleInt"
         style="@style/ButtonStyle"
         android:layout_width="fill_parent"
         android:layout_height="wrap_content"

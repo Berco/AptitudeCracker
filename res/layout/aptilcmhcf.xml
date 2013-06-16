@@ -6,7 +6,7 @@
     android:padding="10dp" >
 
     <Button
-        android:id="@+id/bLcm"
+        android:id="@+id/b_apti_Lcm"
         android:layout_width="match_parent"
         style="@style/ButtonStyle"
         android:layout_gravity="center"
@@ -15,7 +15,7 @@
         android:textSize="22sp" />
 
     <Button
-        android:id="@+id/bHcf"
+        android:id="@+id/b_apti_Hcf"
         android:layout_width="match_parent"
         style="@style/ButtonStyle"
         android:layout_gravity="center"

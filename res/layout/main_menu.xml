@@ -19,7 +19,7 @@
             android:orientation="horizontal" >
 
             <Button
-                android:id="@+id/bapticalc"
+                android:id="@+id/b_main_apticalc"
                 style="@style/ButtonStyle"
                 android:layout_width="0.0dip"
                 android:layout_height="wrap_content"
@@ -29,7 +29,7 @@
                 android:textSize="18sp" />
 
             <Button
-                android:id="@+id/btesturskills"
+                android:id="@+id/b_main_testurskills"
                 style="@style/ButtonStyle"
                 android:layout_width="0.0dip"
                 android:layout_height="wrap_content"
@@ -39,7 +39,7 @@
         </LinearLayout>
 
         <Button
-            android:id="@+id/bmore"
+            android:id="@+id/b_main_more"
             style="@style/ButtonStyle"
             android:layout_marginTop="50sp"
             android:text="@string/about"
@@ -52,7 +52,7 @@
             android:orientation="horizontal" >
 
             <Button
-                android:id="@+id/btipsntricks"
+                android:id="@+id/b_main_tipsntricks"
                 style="@style/ButtonStyle"
                 android:layout_width="0.0dip"
                 android:layout_height="wrap_content"
@@ -63,7 +63,7 @@
                 android:textSize="18sp" />
 
             <Button
-                android:id="@+id/bformulas"
+                android:id="@+id/b_main_formulas"
                 style="@style/ButtonStyle"
                 android:layout_width="0.0dip"
                 android:layout_height="wrap_content"

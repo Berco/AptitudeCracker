@@ -10,7 +10,7 @@ import android.widget.Button;
 
 public class AptiCalc extends Activity implements View.OnClickListener {
 
-	String tag = "Aptitude Calculator";
+	
 	Button bnumsys, bpercent, btimenwork, btimedist, binterest, blcmhcf,
 			bareavolume;
 
@@ -23,12 +23,12 @@ public class AptiCalc extends Activity implements View.OnClickListener {
 	}
 
 	private void initialize() {
-		bnumsys = (Button) findViewById(R.id.bnumsys);
-		bpercent = (Button) findViewById(R.id.bpercent);
-		btimenwork = (Button) findViewById(R.id.btimenwork);
-		btimedist = (Button) findViewById(R.id.btimendist);
-		binterest = (Button) findViewById(R.id.binterest);
-		blcmhcf = (Button) findViewById(R.id.blcmhcf);
+		bnumsys = (Button) findViewById(R.id.b_apti_numsys);
+		bpercent = (Button) findViewById(R.id.b_apti_percent);
+		btimenwork = (Button) findViewById(R.id.b_apti_timenwork);
+		btimedist = (Button) findViewById(R.id.b_apti_timendist);
+		binterest = (Button) findViewById(R.id.b_apti_interest);
+		blcmhcf = (Button) findViewById(R.id.b_apti_lcmhcf);
 
 		bnumsys.setOnClickListener(this);
 		bpercent.setOnClickListener(this);
@@ -45,27 +45,27 @@ public class AptiCalc extends Activity implements View.OnClickListener {
 		
 	switch(button.getId())
 	{
-	case R.id.bnumsys:
+	case R.id.b_apti_numsys:
 		Intent NumSys = new Intent(this, AptiNumSys.class);
 		startActivity(NumSys);
 		break;
-	case R.id.bpercent:
+	case R.id.b_apti_percent:
 		Intent Percentage = new Intent(this, AptiPercent.class);
 		startActivity(Percentage);
 		break;
-	case R.id.btimenwork:
+	case R.id.b_apti_timenwork:
 		Intent TimeNWork = new Intent(this, AptiTimeNWork.class);
 		startActivity(TimeNWork);
 		break;
-	case R.id.btimendist:
+	case R.id.b_apti_timendist:
 		Intent TimeDist = new Intent(this, AptiTimeDist.class);
 		startActivity(TimeDist);
 		break;
-    case R.id.binterest:
+    case R.id.b_apti_interest:
     	Intent Interest = new Intent(this, AptiInterest.class);
         startActivity(Interest);
         break;
-    case R.id.blcmhcf:
+    case R.id.b_apti_lcmhcf:
     	Intent LCMHCF = new Intent(this, AptiLcmHcf.class);
         startActivity(LCMHCF);
         break;

@@ -6,53 +6,53 @@
     android:padding="10dp" >
 
     <RadioGroup
-        android:id="@+id/rgSelect"
+        android:id="@+id/rg_apti_Select"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:orientation="horizontal" >
 
         <RadioButton
-            android:id="@+id/rbtwoperson"
+            android:id="@+id/rb_apti_twoperson"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:checked="true"
             android:text="@string/twopersons" />
 
         <RadioButton
-            android:id="@+id/rbthreeperson"
+            android:id="@+id/rb_apti_threeperson"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:text="@string/threepersons" />
     </RadioGroup>
 
     <EditText
-        android:id="@+id/ETfirstperson"
+        android:id="@+id/ET_apti_firstperson"
         style="@style/ETStyle"
         android:hint="@string/timefirstperson"
         android:inputType="number" >
     </EditText>
 
     <EditText
-        android:id="@+id/ETsecondperson"
+        android:id="@+id/ET_apti_secondperson"
         style="@style/ETStyle"
         android:hint="@string/timesecondperson"
         android:inputType="number" />
 
     <EditText
-        android:id="@+id/ETthirdperson"
+        android:id="@+id/ET_apti_thirdperson"
         style="@style/ETStyle"
         android:hint="@string/timethirdperson"
         android:inputType="number"
         android:visibility="gone" />
 
     <TextView
-        android:id="@+id/TVresult"
+        android:id="@+id/TV_apti_result"
         style="@style/ETStyle"
         android:gravity="center"
         android:textIsSelectable="true" />
 
     <Button
-        android:id="@+id/bcalcWD"
+        android:id="@+id/b_apti_calcWD"
         style="@style/ButtonStyle"
         android:text="@string/aptitimenwork" />
 

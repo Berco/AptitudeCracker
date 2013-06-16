@@ -6,34 +6,34 @@
     android:padding="10dp" >
 
     <RadioGroup
-        android:id="@+id/RgTimeDist"
+        android:id="@+id/Rg_apti_TimeDist"
         android:layout_width="fill_parent"
         android:layout_height="wrap_content"
         android:gravity="center"
         android:orientation="horizontal" >
 
         <RadioButton
-            android:id="@+id/RbTime"
+            android:id="@+id/Rb_apti_Time"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:checked="true"
             android:text="@string/RbTime" />
 
         <RadioButton
-            android:id="@+id/RbSpeed"
+            android:id="@+id/Rb_apti_Speed"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:text="@string/RbSpeed" />
 
         <RadioButton
-            android:id="@+id/RbDistance"
+            android:id="@+id/Rb_apti_Distance"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:text="@string/RbDistance" />
     </RadioGroup>
 
     <EditText
-        android:id="@+id/EtTime"
+        android:id="@+id/Et_apti_Time"
         style="@style/ETStyle"
         android:ems="10"
         android:hint="@string/enterTime"
@@ -41,28 +41,28 @@
         android:visibility="gone" />
 
     <EditText
-        android:id="@+id/EtSpeed"
+        android:id="@+id/Et_apti_Speed"
         style="@style/ETStyle"
         android:ems="10"
         android:hint="@string/enterSpeed"
         android:inputType="number" />
 
     <EditText
-        android:id="@+id/Etdistance"
+        android:id="@+id/Et_apti_distance"
         style="@style/ETStyle"
         android:ems="10"
         android:hint="@string/enterDistance"
         android:inputType="number" />
 
     <TextView
-        android:id="@+id/TvResult"
+        android:id="@+id/Tv_apti_Result"
         style="@style/TVStyle"
         android:gravity="center"
         android:textIsSelectable="true"
         android:textSize="22sp" />
 
     <Button
-        android:id="@+id/BCalcTDS"
+        android:id="@+id/B_apti_CalcTDS"
         android:layout_width="wrap_content"
         style="@style/ButtonStyle"
         android:layout_gravity="center"

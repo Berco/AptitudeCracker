@@ -6,7 +6,7 @@
     android:padding="10dp" >
 
     <EditText
-        android:id="@+id/EtPercentValue"
+        android:id="@+id/Et_apti_PercentValue"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:layout_gravity="center"
@@ -17,7 +17,7 @@
         android:textSize="22sp" />
 
     <EditText
-        android:id="@+id/EtPercent"
+        android:id="@+id/Et_apti_Percent"
         android:layout_width="fill_parent"
         android:layout_height="wrap_content"
         android:layout_marginTop="15dp"
@@ -27,7 +27,7 @@
         android:textSize="22sp" />
 
     <TextView
-        android:id="@+id/TvPercentValue"
+        android:id="@+id/Tv_apti_PercentValue"
         android:layout_width="fill_parent"
         android:layout_height="wrap_content"
         android:layout_marginTop="15dp"
@@ -35,7 +35,7 @@
         android:textSize="22sp" />
 
     <Button
-        android:id="@+id/bcalcPercentValue"
+        android:id="@+id/b_apti_calcPercentValue"
         style="@style/ButtonStyle"
         android:layout_width="match_parent"
         android:layout_gravity="center"

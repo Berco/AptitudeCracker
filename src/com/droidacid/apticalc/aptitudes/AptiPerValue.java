@@ -28,10 +28,10 @@ public class AptiPerValue extends Activity implements android.view.View.OnClickL
     protected void initialize(){
 
 
-        EtValueNumber = (EditText) findViewById(R.id.EtPercentValue);
-        EtPercent = (EditText) findViewById(R.id.EtPercent);
-        TVPercentValue = (TextView) findViewById(R.id.TvPercentValue);
-        calculate = (Button) findViewById(R.id.bcalcPercentValue);
+        EtValueNumber = (EditText) findViewById(R.id.Et_apti_PercentValue);
+        EtPercent = (EditText) findViewById(R.id.Et_apti_Percent);
+        TVPercentValue = (TextView) findViewById(R.id.Tv_apti_PercentValue);
+        calculate = (Button) findViewById(R.id.b_apti_calcPercentValue);
         calculate.setOnClickListener(this);
     }
 

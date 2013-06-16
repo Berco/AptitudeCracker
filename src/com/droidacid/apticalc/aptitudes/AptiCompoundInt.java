@@ -14,7 +14,7 @@ import android.widget.TextView;
 public class AptiCompoundInt extends Activity implements View.OnClickListener{
 
     EditText EtPrincipal, EtRate, EtTime;
-    Button calculate;
+    Button bcalculate;
     TextView TvAnswer;
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -26,12 +26,12 @@ public class AptiCompoundInt extends Activity implements View.OnClickListener{
 
     private void initialize() {
 
-        EtPrincipal = (EditText) findViewById(R.id.EtPrincipal);
-        EtRate = (EditText) findViewById(R.id.EtRate);
+        EtPrincipal = (EditText) findViewById(R.id.Et_apti_Principal);
+        EtRate = (EditText) findViewById(R.id.Et_apti_Rate);
         EtTime = (EditText) findViewById(R.id.EtTime);
-        calculate = (Button) findViewById(R.id.bCalcCompoundInt);
-        TvAnswer = (TextView) findViewById(R.id.TvAnswer);
-        calculate.setOnClickListener(this);
+        bcalculate = (Button) findViewById(R.id.b_apti_CalcCompoundInt);
+        TvAnswer = (TextView) findViewById(R.id.Tv_apti_Answer);
+        bcalculate.setOnClickListener(this);
     }
 
     @Override

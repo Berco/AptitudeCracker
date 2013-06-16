@@ -22,14 +22,14 @@ public class AptiNumSys extends Activity implements OnClickListener{
         setContentView(R.layout.aptinumsys);
 
         // Reference TextViews and Buttons
-        number1 = (EditText) findViewById(R.id.number1);
-        number2 = (EditText) findViewById(R.id.number2);
-        output = (TextView) findViewById(R.id.output);
-        add = (Button) findViewById(R.id.badd);
-        subtract = (Button) findViewById(R.id.bsub);
-        multiply = (Button) findViewById(R.id.bmul);
-        divide = (Button) findViewById(R.id.bdiv);
-        mod = (Button) findViewById(R.id.bmod);
+        number1 = (EditText) findViewById(R.id.Et_apti_number1);
+        number2 = (EditText) findViewById(R.id.Et_apti_number2);
+        output = (TextView) findViewById(R.id.Tv_apti_output);
+        add = (Button) findViewById(R.id.b_apti_add);
+        subtract = (Button) findViewById(R.id.b_apti_sub);
+        multiply = (Button) findViewById(R.id.b_apti_mul);
+        divide = (Button) findViewById(R.id.b_apti_div);
+        mod = (Button) findViewById(R.id.b_apti_mod);
 
         // Set listeners for when buttons are pressed
         add.setOnClickListener(this);
@@ -52,19 +52,19 @@ public class AptiNumSys extends Activity implements OnClickListener{
 
         // Perform relevant operations
         switch(v.getId()){
-        case R.id.badd:
+        case R.id.b_apti_add:
             outputValue = numberone + numbertwo;
             break;
-        case R.id.bsub:
+        case R.id.b_apti_sub:
             outputValue = numberone - numbertwo;
             break;
-        case R.id.bmul:
+        case R.id.b_apti_mul:
             outputValue = numberone * numbertwo;
             break;
-        case R.id.bdiv:
+        case R.id.b_apti_div:
             outputValue = numberone / numbertwo;
             break;
-        case R.id.bmod:
+        case R.id.b_apti_mod:
             outputValue = numberone % numbertwo;
             break;
         }

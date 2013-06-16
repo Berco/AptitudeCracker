@@ -7,7 +7,7 @@
     android:paddingTop="20dp" >
 
     <EditText
-        android:id="@+id/EtHcf1"
+        android:id="@+id/Et_apti_Hcf1"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:ems="10"
@@ -18,7 +18,7 @@
     </EditText>
 
     <EditText
-        android:id="@+id/EtHcf2"
+        android:id="@+id/Et_apti_Hcf2"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:ems="10"
@@ -26,7 +26,7 @@
         android:hint="@string/Et2ndnum" />
 
     <EditText
-        android:id="@+id/EtHcf3"
+        android:id="@+id/Et_apti_Hcf3"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:ems="10"
@@ -34,7 +34,7 @@
         android:hint="@string/Et3rdnum" />
 
     <Button
-        android:id="@+id/BcalcHCF"
+        android:id="@+id/B_apti_calcHCF"
         android:layout_width="match_parent"
         style="@style/ButtonStyle"
         android:layout_marginTop="30dp"

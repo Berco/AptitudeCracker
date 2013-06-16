@@ -5,7 +5,7 @@ import android.app.Activity;
 
 import android.content.Intent;
 import android.os.Bundle;
-import android.util.Log;
+
 import android.view.View;
 import android.widget.Button;
 
@@ -15,7 +15,6 @@ import android.widget.Button;
 public class AptiInterest extends Activity implements View.OnClickListener {
 
 	Button sInterest, cInterest;
-	String tag = "aptiInterest Class";
 
 	@Override
 	protected void onCreate(Bundle savedInstanceState) {
@@ -25,8 +24,8 @@ public class AptiInterest extends Activity implements View.OnClickListener {
 	}
 
 	protected void initialize() {
-		sInterest = (Button) findViewById(R.id.bsimpleint);
-		cInterest = (Button) findViewById(R.id.bcompoundint);
+		sInterest = (Button) findViewById(R.id.b_apti_simpleint);
+		cInterest = (Button) findViewById(R.id.b_apti_compoundint);
 		sInterest.setOnClickListener(this);
 		cInterest.setOnClickListener(this);
 	}
@@ -34,14 +33,14 @@ public class AptiInterest extends Activity implements View.OnClickListener {
 	@Override
 	public void onClick(View view) {
 		switch (view.getId()) {
-		case R.id.bsimpleint:
+		case R.id.b_apti_simpleint:
 			Intent SimpleInt = new Intent(this, AptiSimpleInt.class);
 			startActivity(SimpleInt);
 			break;
-		case R.id.bcompoundint:
+		case R.id.b_apti_compoundint:
 			Intent CompoundInt = new Intent(this, AptiCompoundInt.class);
 			startActivity(CompoundInt);
-			Log.d(tag, "Compound Interest button is pressed.");
+
 			break;
 		}
 	}
