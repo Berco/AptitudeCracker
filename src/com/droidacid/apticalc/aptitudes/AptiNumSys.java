@@ -70,7 +70,7 @@ public class AptiNumSys extends Activity implements OnClickListener{
         }
         // Add result to Running total stored in output TextView
     	String result = "Answer is : "+outputValue;
-    	TextView tvresult = (TextView) findViewById(R.id.output);
+    	TextView tvresult = (TextView) findViewById(R.id.Tv_apti_output);
     	tvresult.setText(result);
 
     }

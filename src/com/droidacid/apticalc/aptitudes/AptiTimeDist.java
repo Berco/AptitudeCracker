@@ -44,7 +44,7 @@ public class AptiTimeDist extends Activity implements OnClickListener, OnChecked
 	@Override
 	public void onClick(View v) {
 		
-		 if (v.getId() == R.id.BCalcTDS){
+		 if (v.getId() == R.id.B_apti_CalcTDS){
 			int selectedRB = RgTimeDist.getCheckedRadioButtonId();
 			
 			if(EtTime.getText().toString().equals("")) EtTime.setText("0");

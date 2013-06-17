@@ -16,7 +16,6 @@
         android:layout_alignParentTop="true"
         android:layout_weight=".25"
         android:gravity="center"
-        android:text="00:00"
         android:textAppearance="?android:attr/textAppearanceMedium" />
 
     <LinearLayout
@@ -34,7 +33,6 @@
             android:layout_height="wrap_content"
             android:layout_weight=".75"
             android:gravity="center"
-            
             android:textAppearance="?android:attr/textAppearanceLarge"
             android:textSize="28sp" />
 
@@ -51,7 +49,7 @@
         android:id="@+id/Tr_tys_Edit"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:layout_below="@+id/LMain"
+        android:layout_below="@+id/L_tys_Main"
         android:layout_centerHorizontal="true"
         android:padding="4dp" >
 
@@ -70,7 +68,7 @@
         android:id="@+id/TL_tys_1"
         android:layout_width="fill_parent"
         android:layout_height="wrap_content"
-        android:layout_below="@+id/TrEdit"
+        android:layout_below="@+id/Tr_tys_Edit"
         android:orientation="vertical"
         android:padding="4dp" >
 

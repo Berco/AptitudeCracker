@@ -7,6 +7,8 @@ import java.util.Timer;
 import java.util.TimerTask;
 
 import android.app.Activity;
+import android.app.AlertDialog;
+import android.content.DialogInterface;
 import android.content.Intent;
 import android.graphics.Color;
 import android.os.Bundle;
@@ -187,6 +189,7 @@ public class FourCalculation extends Activity implements OnClickListener {
 		Result = mQuestion.getResult();
 	}
 
+	@SuppressWarnings("deprecation")
 	public void VerifyAnswer() {
 		
 		if (Result == Integer.valueOf((String) TvAnswers.getText())) {
@@ -199,7 +202,21 @@ public class FourCalculation extends Activity implements OnClickListener {
 			TvNumberOfQuestions.setText(Integer.toString(RightAnswers) + "/"
 					+ Integer.toString(RightAnswers + WrongAnswers));
 			TvNumberOfQuestions.setTextColor(Color.RED);
-		}
+			
+						AlertDialog wrongDialog = new AlertDialog.Builder(this).create();
+						wrongDialog.setCancelable(false);
+						wrongDialog.setTitle("Wrong Answer");
+						wrongDialog.setMessage("Right answer is : " + Result);
+						wrongDialog.setButton("Ok", new DialogInterface.OnClickListener() {
+							
+							@Override
+							public void onClick(DialogInterface dialog, int which) {
+							dialog.cancel();	
+								
+							}
+						});
+						wrongDialog.show();
+					}		
 
 		TvAnswers.setText("");
 		Questions();

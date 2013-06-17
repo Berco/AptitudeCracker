@@ -28,7 +28,7 @@ public class AptiCompoundInt extends Activity implements View.OnClickListener{
 
         EtPrincipal = (EditText) findViewById(R.id.Et_apti_Principal);
         EtRate = (EditText) findViewById(R.id.Et_apti_Rate);
-        EtTime = (EditText) findViewById(R.id.EtTime);
+        EtTime = (EditText) findViewById(R.id.Et_apti_Time);
         bcalculate = (Button) findViewById(R.id.b_apti_CalcCompoundInt);
         TvAnswer = (TextView) findViewById(R.id.Tv_apti_Answer);
         bcalculate.setOnClickListener(this);

@@ -37,7 +37,7 @@ public class AptiPercent extends Activity implements android.view.View.OnClickLi
 	public void onClick(View v) {
 
         switch(v.getId()){
-            case R.id.calcPercent:
+            case R.id.b_apti_calcPercent:
                 // Parse the input values to num and den as double
 
                 if(numerator.getText().toString().equals("")) numerator.setText("0");

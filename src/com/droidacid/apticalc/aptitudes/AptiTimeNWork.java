@@ -48,7 +48,7 @@ public class AptiTimeNWork extends Activity implements OnClickListener, OnChecke
 		
 		@Override
 		public void onClick(View v) {
-			if (v.getId() == R.id.bcalcWD){
+			if (v.getId() == R.id.b_apti_calcWD){
 				int selectedRB = RGselect.getCheckedRadioButtonId();
 				
 				if (num1.getText().toString().equals("")) num1.setText("0");
@@ -61,11 +61,11 @@ public class AptiTimeNWork extends Activity implements OnClickListener, OnChecke
 				
 				
 				switch (selectedRB){
-				case R.id.rbtwoperson:
+				case R.id.rb_apti_twoperson:
 					TVoutput.setText("Time taken = " + Double.toString(100 / (100/numb1 + 100/numb2)) + " days");
 					
 					break;
-				case R.id.rbthreeperson:
+				case R.id.rb_apti_threeperson:
 					TVoutput.setText("Time taken = " + Double.toString(100 / (100/numb1 + 100/numb2 + 100/numb3)) + " days");
 					break;
 				}
