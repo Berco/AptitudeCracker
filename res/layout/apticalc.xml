@@ -7,7 +7,8 @@
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:padding="10dp"
-        android:orientation="vertical" >
+        android:orientation="vertical"
+        android:layout_gravity="center" >
 
         <Button
             android:id="@+id/b_apti_numsys"
@@ -35,7 +36,7 @@
             style="@style/ButtonStyle"
             android:text="@string/aptiInterest" />
 
-        <Button
+        <!-- <Button
             android:id="@+id/b_apti_profitnloss"
             style="@style/ButtonStyle"
             android:text="@string/profitnloss" />
@@ -43,7 +44,7 @@
         <Button
             android:id="@+id/b_apti_lcmhcf"
             style="@style/ButtonStyle"
-            android:text="@string/BLcmHcf" />
+            android:text="@string/BLcmHcf" /> -->
     </LinearLayout>
 
 </ScrollView>

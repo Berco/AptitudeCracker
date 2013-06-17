@@ -34,13 +34,13 @@
     <Button
         android:id="@+id/b_tys_HighScores"
         android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
+        style="@style/ButtonStyle"
         android:text="@string/high_scores" />
 
     <Button
         android:id="@+id/b_tys_PlayAgain"
         android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
+        style="@style/ButtonStyle"
         android:text="@string/play_again" />
 
 </LinearLayout>

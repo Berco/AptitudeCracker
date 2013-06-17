@@ -11,7 +11,7 @@ import android.widget.Button;
 public class AptiCalc extends Activity implements View.OnClickListener {
 
 	
-	Button bnumsys, bpercent, btimenwork, btimedist, binterest, blcmhcf,
+	Button bnumsys, bpercent, btimenwork, btimedist, binterest, //blcmhcf,
 			bareavolume;
 
 	@Override
@@ -28,14 +28,14 @@ public class AptiCalc extends Activity implements View.OnClickListener {
 		btimenwork = (Button) findViewById(R.id.b_apti_timenwork);
 		btimedist = (Button) findViewById(R.id.b_apti_timendist);
 		binterest = (Button) findViewById(R.id.b_apti_interest);
-		blcmhcf = (Button) findViewById(R.id.b_apti_lcmhcf);
+		//blcmhcf = (Button) findViewById(R.id.b_apti_lcmhcf);
 
 		bnumsys.setOnClickListener(this);
 		bpercent.setOnClickListener(this);
 		btimenwork.setOnClickListener(this);
 		btimedist.setOnClickListener(this);
 		binterest.setOnClickListener(this);
-		blcmhcf.setOnClickListener(this);
+		//blcmhcf.setOnClickListener(this);
 
 	}
 
@@ -65,10 +65,10 @@ public class AptiCalc extends Activity implements View.OnClickListener {
     	Intent Interest = new Intent(this, AptiInterest.class);
         startActivity(Interest);
         break;
-    case R.id.b_apti_lcmhcf:
+    /*case R.id.b_apti_lcmhcf:
     	Intent LCMHCF = new Intent(this, AptiLcmHcf.class);
         startActivity(LCMHCF);
-        break;
+        break;*/
 
 	}
 		

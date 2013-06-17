@@ -42,7 +42,7 @@
     <RadioGroup
         android:id="@+id/Rg_tys_DiffLevel"
         android:layout_width="match_parent"
-        android:layout_height="wrap_content"
+        style="@style/ButtonStyle"
         android:layout_below="@+id/Tv_tys_DifficultyType"
         android:layout_marginTop="5dp"
         android:gravity="center"
@@ -74,7 +74,7 @@
     <Button
         android:id="@+id/b_tys_Continue"
         android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
+        style="@style/ButtonStyle"
         android:layout_below="@+id/Rg_tys_DiffLevel"
         android:layout_centerHorizontal="true"
         android:layout_marginTop="30dp"
@@ -83,7 +83,7 @@
     <Button
         android:id="@+id/b_tys_HighScores"
         android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
+        style="@style/ButtonStyle"
         android:layout_alignParentBottom="true"
         android:layout_centerHorizontal="true"
         android:text="@string/high_scores" />

@@ -2,7 +2,6 @@ package com.droidacid.apticalc.aptitudes;
 
 import com.droidacid.apticalc.R;
 import android.app.Activity;
-import android.content.Intent;
 import android.os.Bundle;
 import android.view.View;
 import android.widget.Button;
@@ -16,8 +15,8 @@ public class AptiLcmHcf extends Activity implements View.OnClickListener {
 
     Button blcm, bhcf;
     EditText EtNumber1, EtNumber2; // EtNumber3;
-	TextView TvLcmResult;
-	double max, min, lcm = 1;
+	TextView TvResult;
+	int max, min, lcm, hcf;
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
@@ -27,10 +26,10 @@ public class AptiLcmHcf extends Activity implements View.OnClickListener {
     
     protected void initialize() {
 		
-		EtNumber1 = (EditText) findViewById(R.id.Et_apti_Hcf1);
-		EtNumber2 = (EditText) findViewById(R.id.Et_apti_Hcf2);
+		EtNumber1 = (EditText) findViewById(R.id.Et_apti_Num1);
+		EtNumber2 = (EditText) findViewById(R.id.Et_apti_Num2);
 		// EtNumber3 = (EditText) findViewById(R.id.Et_apti_Hcf3);
-		TvLcmResult = (TextView) findViewById(R.id.Tv_apti_LcmResult);
+		TvResult = (TextView) findViewById(R.id.tv_apti_LcmResult);
 		blcm = (Button) findViewById(R.id.b_apti_Lcm);
         bhcf = (Button) findViewById(R.id.b_apti_Hcf);
         blcm.setOnClickListener(this);
@@ -44,48 +43,37 @@ public class AptiLcmHcf extends Activity implements View.OnClickListener {
 			EtNumber2.setText("0");
 		// if (num3.getText().toString().equals("")) num3.setText("0");
 
-		Double numb1 = Double.parseDouble(EtNumber1.getText().toString());
-		Double numb2 = Double.parseDouble(EtNumber2.getText().toString());
+		int numb1 = Integer.parseInt(EtNumber1.getText().toString());
+		int numb2 = Integer.parseInt(EtNumber2.getText().toString());
 		// Double numb3 = Double.parseDouble(num3.getText().toString());
 		calcHCF(numb1, numb2);
-		calcLCM(numb1, numb2);
+		calcLCM(numb1, numb2, hcf);
 	}
 
-	private void calcLCM(double num1, double num2) {
-		if(num1 > num2){
-			max = num1;
-			min = num2;
-		}
-		else{
-			max = num2;
-			min = num1;
-		}
-		for(int i = 1; i <= min ; i++){
-			double x = max * i;
-			if(x % min == 0){
-				lcm = x;
-				break;
-			}
-		}
-	TvLcmResult.setText("L.C.M is : " + lcm);
-	}
+	
 
-	private void calcHCF(double num1, double num2) {
+	private int calcLCM(int num1, int num2, int hcf) {
+		return (num1 * num2)/ hcf;
+		}
+		
+	
 
+	private int calcHCF(int num1, int num2) {
+		if(num1==0)
+			return num2;
+		else {
+			return calcHCF(num2%num1, num1);
+		}
+		//hcf = calcHCF(num1, num2);
 	}
 
 
     @Override
     public void onClick(View view) {
-
-        switch(view.getId()){
-            case R.id.b_apti_Lcm:
-            calcLCM(double, double);
-            break;
-            case R.id.b_apti_Hcf:
-            
-            break;
+    	
+    	
+        
         }
 
     }
-}
+

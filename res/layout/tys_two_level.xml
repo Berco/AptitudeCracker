@@ -12,7 +12,7 @@
 
         <Button
             android:id="@+id/B_tys_Addition"
-            android:layout_height="wrap_content"
+            style="@style/ButtonStyle"
             android:layout_width="match_parent"
             android:padding="10dp"
             android:text="Addition" />
@@ -25,7 +25,7 @@
 
         <Button
             android:id="@+id/B_tys_Subtraction"
-            android:layout_height="wrap_content"
+            style="@style/ButtonStyle"
             android:layout_width="match_parent"
             android:padding="10dp"
             android:text="Subtraction" />
@@ -38,7 +38,7 @@
 
         <Button
             android:id="@+id/B_tys_Multiplication"
-            android:layout_height="wrap_content"
+            style="@style/ButtonStyle"
             android:layout_width="match_parent"
             android:padding="10dp"
             android:text="Multiplication" />
@@ -51,7 +51,7 @@
 
         <Button
             android:id="@+id/B_tys_Division"
-            android:layout_height="wrap_content"
+            style="@style/ButtonStyle"
             android:layout_width="match_parent"
             android:padding="10dp"
             android:text="Division" />
@@ -64,7 +64,7 @@
 
         <Button
             android:id="@+id/B_tys_All"
-            android:layout_height="wrap_content"
+            style="@style/ButtonStyle"
             android:layout_width="match_parent"
             android:padding="10dp"
             android:text="All Of The Above" />

@@ -24,14 +24,24 @@
         android:hint="@string/Et2ndnum"
         android:inputType="number" />
 
-    <!-- <EditText
+    <!--
+         <EditText
         android:id="@+id/Et_apti_Num33"
         android:layout_width="fill_parent"
         android:layout_height="wrap_content"
         android:layout_marginTop="15dp"
         android:ems="10"
         android:hint="@string/Et3rdnum"
-        android:inputType="number" /> -->
+        android:inputType="number" />
+    -->
+
+    <TextView
+        android:id="@+id/tv_apti_LcmResult"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:textAppearance="?android:attr/textAppearanceMedium"
+        android:textSize="22sp" />
 
     <Button
         android:id="@+id/b_apti_Lcm"
