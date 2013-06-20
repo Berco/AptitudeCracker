@@ -25,7 +25,7 @@ public class HighScores extends Activity {
 	}
 	private void getScore() {
 		Bundle getScore = getIntent().getExtras();
-		score = getScore.getInt("score");
+		score = getScore.getInt("score");				// getting error with this NullPointerException
 		//myScore = Integer.toString(score);
 		//setScore(score);
 		getScores(score);
