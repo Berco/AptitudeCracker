@@ -12,7 +12,7 @@ public class AptiCalc extends Activity implements View.OnClickListener {
 
 	
 	Button bnumsys, bpercent, btimenwork, btimedist, binterest, //blcmhcf,
-			bareavolume;
+			bareavolume, bfactorial;
 
 	@Override
 	protected void onCreate(Bundle savedInstanceState) {
@@ -29,6 +29,7 @@ public class AptiCalc extends Activity implements View.OnClickListener {
 		btimedist = (Button) findViewById(R.id.b_apti_timendist);
 		binterest = (Button) findViewById(R.id.b_apti_interest);
 		//blcmhcf = (Button) findViewById(R.id.b_apti_lcmhcf);
+		bfactorial = (Button) findViewById(R.id.b_apti_factorial);
 
 		bnumsys.setOnClickListener(this);
 		bpercent.setOnClickListener(this);
@@ -36,6 +37,7 @@ public class AptiCalc extends Activity implements View.OnClickListener {
 		btimedist.setOnClickListener(this);
 		binterest.setOnClickListener(this);
 		//blcmhcf.setOnClickListener(this);
+		bfactorial.setOnClickListener(this);
 
 	}
 
@@ -69,6 +71,10 @@ public class AptiCalc extends Activity implements View.OnClickListener {
     	Intent LCMHCF = new Intent(this, AptiLcmHcf.class);
         startActivity(LCMHCF);
         break;*/
+    case R.id.b_apti_factorial:
+    	Intent factorial = new Intent(this, AptiFactorial.class);
+        startActivity(factorial);
+        break;
 
 	}
 		

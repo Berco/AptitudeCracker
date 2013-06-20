@@ -164,5 +164,8 @@
     <string name="location">Location</string>
     <string name="your_reviews_and_suggestions">Your reviews and suggestions</string>
     <string name="send_mail">Send Mail</string>
+    <string name="highest_score">Highest Score</string>
+    <string name="enter_number">Enter the number</string>
+    <string name="factorial">Factorial</string>
 
 </resources>

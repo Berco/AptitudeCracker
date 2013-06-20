@@ -1,9 +1,12 @@
 package com.droidacid.apticalc.tys;
 
 import com.droidacid.apticalc.R;
+import com.droidacid.apticalc.aptitudes.AptiFactorial;
 
 import android.app.Activity;
 import android.content.Intent;
+import android.content.SharedPreferences;
+import android.content.SharedPreferences.Editor;
 import android.os.Bundle;
 import android.util.Log;
 import android.view.View;
@@ -65,14 +68,17 @@ public class TYSScores extends Activity implements OnClickListener {
 		RightAnswers.setText("Right Answers : " + rightAnswer);
 		WrongAnswers.setText("Wrong Answers : " + wrongAnswer);
 		TotalScore.setText("Total Score : " + myScore);
-
+		
 	}
+
+	
 
 	@Override
 	public void onClick(View v) {
 		switch(v.getId()){
 		case R.id.b_tys_HighScores:
-			
+			Intent highScore = new Intent(this, HighScores.class);
+			startActivity(highScore);
 		break;
 		case R.id.b_tys_PlayAgain:
 			

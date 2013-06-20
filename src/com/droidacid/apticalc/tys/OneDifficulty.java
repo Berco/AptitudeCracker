@@ -1,7 +1,6 @@
 package com.droidacid.apticalc.tys;
 
 import com.droidacid.apticalc.R;
-
 import android.app.Activity;
 import android.content.Intent;
 import android.os.Bundle;
@@ -60,8 +59,8 @@ public class OneDifficulty extends Activity implements OnClickListener,
 		break;
 		
 		case R.id.b_tys_HighScores:
-			Intent HighScores = new Intent(this, HighScores.class);
-			startActivity(HighScores);
+			Intent highScore = new Intent(this, HighScores.class);
+			startActivity(highScore);
 		break;
 		}
 
