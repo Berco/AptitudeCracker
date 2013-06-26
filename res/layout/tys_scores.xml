@@ -41,10 +41,7 @@
         android:layout_width="wrap_content"
         android:visibility="invisible"
         style="@style/ButtonStyle"
-<<<<<<< HEAD
         android:text="@string/high_scores" />
-=======
-        android:text="@string/play_again" />
     
     <Button
         android:id="@+id/b_tys_GenerateScore"
@@ -53,6 +50,4 @@
         android:visibility="gone"
         android:onClick="generateScore"
         android:text="Generate score" />
->>>>>>> 13579dd6d31cbae8f7dd20714c3bcece195e51ec
-
 </LinearLayout>
