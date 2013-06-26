@@ -42,5 +42,13 @@
         android:layout_width="wrap_content"
         style="@style/ButtonStyle"
         android:text="@string/play_again" />
+    
+    <Button
+        android:id="@+id/b_tys_GenerateScore"
+        android:layout_width="wrap_content"
+        style="@style/ButtonStyle"
+        android:visibility="gone"
+        android:onClick="generateScore"
+        android:text="Generate score" />
 
 </LinearLayout>
