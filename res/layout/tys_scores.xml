@@ -36,10 +36,10 @@
         android:layout_width="wrap_content"
         style="@style/ButtonStyle"
         android:text="@string/play_again" />
+    
     <Button
         android:id="@+id/b_tys_HighScores"
         android:layout_width="wrap_content"
-        android:visibility="invisible"
         style="@style/ButtonStyle"
         android:text="@string/high_scores" />
     

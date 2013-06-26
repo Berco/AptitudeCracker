@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    style="@style/ButtonStyle"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_margin="12dp" >
+
+    <TextView
+        android:id="@+id/tv_tys_high_name"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_marginLeft="5dip"
+        android:layout_marginTop="5dip"
+        android:singleLine="true"
+        android:text="Shivam"
+        android:textStyle="bold" />
+    
+    <TextView
+        android:id="@+id/tv_tys_high_score"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentRight="true"
+        android:layout_marginRight="5dip"
+        android:layout_marginTop="5dip"
+        android:singleLine="true"
+        android:text="85"
+        android:textStyle="bold" />
+
+</RelativeLayout>

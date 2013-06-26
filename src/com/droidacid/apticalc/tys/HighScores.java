@@ -1,57 +1,56 @@
 package com.droidacid.apticalc.tys;
 
-import com.droidacid.apticalc.R;
+import java.util.ArrayList;
+import java.util.List;
 
-import android.app.Activity;
+import com.droidacid.apticalc.R;
+import com.droidacid.apticalc.tys.model.HighScoreListAdapter;
+import com.droidacid.apticalc.tys.model.ScoreEntry;
+
+import android.app.ListActivity;
 import android.content.SharedPreferences;
 import android.os.Bundle;
-import android.widget.TextView;
+import android.preference.PreferenceManager;
+import android.util.Log;
 
-public class HighScores extends Activity {
+public class HighScores extends ListActivity {
 
-	TextView tvHighScore;
-	private static String SCORE_KEY = "savedScore";
-	String myScore;
-	int score;
+	private static final String tag = "HighScores";
+	private HighScoreListAdapter mAdapter;
+	
 	@Override
 	protected void onCreate(Bundle savedInstanceState) {
 		// TODO Auto-generated method stub
 		super.onCreate(savedInstanceState);
+		Log.d(tag, "onCreate");
 		setContentView(R.layout.tys_high_score);
-		tvHighScore = (TextView) findViewById(R.id.tv_tys_score);
-		getScore();
-		setScore();
-			
-	}
-	private void getScore() {
-		Bundle getScore = getIntent().getExtras();
-		score = getScore.getInt("score");				// getting error with this NullPointerException
-		//myScore = Integer.toString(score);
-		//setScore(score);
-		getScores(score);
+		
+		if ( mAdapter == null){
+			mAdapter = new HighScoreListAdapter(this);
+			setListAdapter(mAdapter);		
+		}
+		mAdapter.setData(getScoreList());
 	}
 	
-	private void getScores(int score) {
-		SharedPreferences saveScore = getSharedPreferences("saveScores", MODE_PRIVATE);
-		SharedPreferences.Editor editor = saveScore.edit();
-		editor.putInt(SCORE_KEY, score);
-		editor.commit();
-	}
-	private void setScore() {
-		if (tvHighScore.getText().toString().equals("")) tvHighScore.setText("0");
-		int scoreSaved = Integer.parseInt(tvHighScore.getText().toString());
-		if (scoreSaved > score){
-			tvHighScore.setText(scoreSaved);
-		}
-		else{
-			SharedPreferences saveScore = getSharedPreferences("saveScores", MODE_PRIVATE);
-			tvHighScore.setText(saveScore.getString(SCORE_KEY, ""));
-		}
-		
-		
-	}
 
 	
+
+	private List<ScoreEntry> getScoreList() {
+		SharedPreferences getPrefs = PreferenceManager.getDefaultSharedPreferences(getBaseContext());
+		int numberEntries = getPrefs.getInt("entries", 0);			
+		List<ScoreEntry> entries = new ArrayList<ScoreEntry>();
+		
+		for (int i = 0;  i < numberEntries ; i++){
+			String high = getPrefs.getString("high_"+Integer.toString(i), "name,12");
+			String[] highA = high.split(",");
+			ScoreEntry entry = new ScoreEntry(highA[0], Integer.valueOf(highA[1]));
+			entries.add(entry);
+		}
+		return entries;
+	}
+
+
+
 
 	@Override
 	protected void onPause() {
