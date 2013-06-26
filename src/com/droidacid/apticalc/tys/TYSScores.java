@@ -8,15 +8,20 @@ import com.droidacid.apticalc.R;
 import com.droidacid.apticalc.tys.model.ScoreEntry;
 
 import android.app.Activity;
+import android.app.AlertDialog;
+import android.content.DialogInterface;
 import android.content.Intent;
 import android.content.SharedPreferences;
 import android.content.SharedPreferences.Editor;
+import android.graphics.Color;
 import android.os.Bundle;
 import android.preference.PreferenceManager;
 import android.util.Log;
+import android.view.LayoutInflater;
 import android.view.View;
 import android.view.View.OnClickListener;
 import android.widget.Button;
+import android.widget.EditText;
 import android.widget.TextView;
 import android.widget.Toast;
 
@@ -54,7 +59,7 @@ public class TYSScores extends Activity implements OnClickListener {
 		wrongAns = getScore.getInt("wronganswers");
 		score = getScore.getInt("score");
 		
-		if (isHighScore(score)) saveScore(score);
+		if (isHighScore(score)) figureOutName(score);
 		
 		getValuesToString();
 		
@@ -65,17 +70,52 @@ public class TYSScores extends Activity implements OnClickListener {
 		// to hide this method and its button set visibility to gone in the xml
 		int generatedScore = (int) (50+(Math.random()*30));
 		Toast.makeText(this, "Generated: " + Integer.toString(generatedScore), Toast.LENGTH_SHORT).show();
-		if (isHighScore(generatedScore)) saveScore(generatedScore);
+		if (isHighScore(generatedScore)) figureOutName(generatedScore);
 		
 	}
 
-	private void saveScore(int score) {
-		Toast.makeText(this, "HighScore!!!", Toast.LENGTH_SHORT).show();
+	private void figureOutName(final int score){
+		SharedPreferences getPrefs = PreferenceManager.getDefaultSharedPreferences(getBaseContext());
+		final String lastName = getPrefs.getString("lastName", "enter your name");
 		
+		AlertDialog.Builder alertDialogBuilder = new AlertDialog.Builder(this);
+			LayoutInflater li = LayoutInflater.from(this);
+			//TODO: this dialog can be much more beautifull. some textview or whatever.. 
+			//TODO: this dialog needs to be filled with @strings instead of hard coded strings
+			View baseView = li.inflate(R.layout.tys_score_newdialog, null);
+			alertDialogBuilder.setView(baseView);
+
+		final TextView tvCongrats = (TextView) baseView.findViewById(R.id.tv_tys_congrats);
+		tvCongrats.setText("New highscore of " + Integer.toString(score));
+		final EditText userInput = (EditText) baseView.findViewById(R.id.et_tys_nameInput);
+		userInput.setHint(lastName);
+		userInput.setHintTextColor(Color.DKGRAY);
+		
+		alertDialogBuilder
+			.setCancelable(false)
+			.setTitle("HighScore!")
+			.setPositiveButton("OK",
+			  new DialogInterface.OnClickListener() {
+			    public void onClick(DialogInterface dialog,int id) {
+			    	if (!userInput.getText().toString().equals("")){
+			    		String newName = userInput.getText().toString();
+			    		saveScore(newName, score);
+			    	}else{
+			    		saveScore(lastName, score);
+			    	}
+			    }
+			  });
+
+		AlertDialog alertDialog = alertDialogBuilder.create();
+		alertDialog.show();
+	}
+	
+	private void saveScore(String name, int score) {
 		SharedPreferences getPrefs = PreferenceManager.getDefaultSharedPreferences(getBaseContext());
 		int numberEntries = getPrefs.getInt("entries", 0);
+		
 		//Log.d(tag, "numberEntries= "+ Integer.toString(numberEntries));
-		ScoreEntry newEntry = new ScoreEntry("shivam", score);
+		ScoreEntry newEntry = new ScoreEntry(name, score);
 		//Log.d(tag, "newEntry= "+ newEntry.getName()+" "+Integer.toString(newEntry.getScore()));
 		
 		List<ScoreEntry> entries = new ArrayList<ScoreEntry>();
@@ -98,8 +138,8 @@ public class TYSScores extends Activity implements OnClickListener {
 		
 		//Log.d(tag, "entries.size= " + Integer.toString(entries.size()));
 		
-		Editor editor = getPrefs.edit();
 		String scores = "";
+		Editor editor = getPrefs.edit();
 		for (int i = 0; i < entries.size(); i++){
 			String aName= entries.get(i).getName();
 			String aScore = Integer.toString(entries.get(i).getScore());
@@ -107,9 +147,10 @@ public class TYSScores extends Activity implements OnClickListener {
 			editor.putString("high_"+Integer.toString(i), aName+","+aScore);
 		}
 		
-		Log.d(tag, "adding entries: " + Integer.toString(entries.size()));
-		Log.d(tag, "added scores: "+ scores);
+		//Log.d(tag, "adding entries: " + Integer.toString(entries.size()));
+		//Log.d(tag, "added scores: "+ scores);
 		
+		editor.putString("lastName", name);
 		editor.putInt("entries", entries.size());
         editor.commit();
 	}
