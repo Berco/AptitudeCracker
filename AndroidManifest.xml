@@ -1,8 +1,8 @@
 <?xml version="1.0" encoding="utf-8"?>
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
     package="com.droidacid.apticalc"
-    android:versionCode="1"
-    android:versionName="1.0" >
+    android:versionCode="2"
+    android:versionName="1.01" >
 
     <uses-sdk
         android:minSdkVersion="8"
@@ -12,131 +12,132 @@
         android:allowBackup="true"
         android:icon="@drawable/ic_launcher"
         android:label="@string/app_name"
-        android:theme="@style/AppTheme"
-        android:screenOrientation="portrait" >
-        
+        android:theme="@style/AppTheme" >
+
         <!-- Main menu intents -->
         <activity
             android:name=".MainMenu"
-            android:label="@string/app_name" >
+            android:label="@string/app_name" 
+            android:screenOrientation="portrait" >
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
+
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
-        
-        <activity android:name="com.droidacid.apticalc.aptitudes.AptiCalc" />
-        <activity android:name="com.droidacid.apticalc.tys.OneDifficulty" />
-        <activity android:name="com.droidacid.apticalc.tipsandtricks.TipsAndTricks" />
-        <activity android:name="com.droidacid.apticalc.tipsandtricks.TipsAndTricksShowTextView" />
-        <activity android:name="com.droidacid.apticalc.formulas.Formulas" />
-        
+        <activity android:name="com.droidacid.apticalc.aptitudes.AptiCalc" android:screenOrientation="portrait"  />
+        <activity android:name="com.droidacid.apticalc.tys.OneDifficulty" android:screenOrientation="portrait"  />
+        <activity android:name="com.droidacid.apticalc.tipsandtricks.TipsAndTricks" android:screenOrientation="portrait"  />
+        <activity android:name="com.droidacid.apticalc.tipsandtricks.TipsAndTricksShowTextView" android:screenOrientation="portrait"  />
+        <activity android:name="com.droidacid.apticalc.formulas.Formulas" android:screenOrientation="portrait"  />
+
         <!-- Test yourself -->
-        <activity android:name="com.droidacid.apticalc.tys.TwoLevel" />
-        <activity android:name="com.droidacid.apticalc.tys.ThreeCounter" />
-        <activity android:name="com.droidacid.apticalc.tys.FourCalculation" />
-        <activity android:name="com.droidacid.apticalc.tys.TYSScores" />
-        <activity android:name="com.droidacid.apticalc.tys.HighScores" />
-        
+        <activity android:name="com.droidacid.apticalc.tys.TwoLevel" android:screenOrientation="portrait"  />
+        <activity android:name="com.droidacid.apticalc.tys.ThreeCounter" android:screenOrientation="portrait"  />
+        <activity android:name="com.droidacid.apticalc.tys.FourCalculation" android:screenOrientation="portrait"  />
+        <activity android:name="com.droidacid.apticalc.tys.TYSScores" android:screenOrientation="portrait"  />
+        <activity android:name="com.droidacid.apticalc.tys.HighScores" android:screenOrientation="portrait"  />
+
         <!-- Aptitude Intents -->
-        <activity android:name="com.droidacid.apticalc.aptitudes.AptiNumSys" />
-        <activity android:name="com.droidacid.apticalc.aptitudes.AptiPercent" />
-        <activity android:name="com.droidacid.apticalc.aptitudes.AptiPerValue" />
-        <activity android:name="com.droidacid.apticalc.aptitudes.AptiTimeNWork" />
-        <activity android:name="com.droidacid.apticalc.aptitudes.AptiTimeDist" />
-        <activity android:name="com.droidacid.apticalc.aptitudes.AptiInterest" />
-        <activity android:name="com.droidacid.apticalc.aptitudes.AptiSimpleInt" />
-        <activity android:name="com.droidacid.apticalc.aptitudes.AptiCompoundInt" />
-        <activity android:name="com.droidacid.apticalc.aptitudes.AptiLcmHcf" />
-        <activity android:name="com.droidacid.apticalc.aptitudes.AptiLcm" />
-        <activity android:name="com.droidacid.apticalc.aptitudes.AptiHcf" />
-        <activity android:name="com.droidacid.apticalc.aptitudes.AptiFactorial" />
-        <activity android:name="com.droidacid.apticalc.tipsandtricks.TnTricksNumSys" />
-        
+        <activity android:name="com.droidacid.apticalc.aptitudes.AptiNumSys" android:screenOrientation="portrait"  />
+        <activity android:name="com.droidacid.apticalc.aptitudes.AptiPercent" android:screenOrientation="portrait"  />
+        <activity android:name="com.droidacid.apticalc.aptitudes.AptiPerValue" android:screenOrientation="portrait"  />
+        <activity android:name="com.droidacid.apticalc.aptitudes.AptiTimeNWork" android:screenOrientation="portrait"  />
+        <activity android:name="com.droidacid.apticalc.aptitudes.AptiTimeDist" android:screenOrientation="portrait"  />
+        <activity android:name="com.droidacid.apticalc.aptitudes.AptiInterest" android:screenOrientation="portrait"  />
+        <activity android:name="com.droidacid.apticalc.aptitudes.AptiSimpleInt" android:screenOrientation="portrait"  />
+        <activity android:name="com.droidacid.apticalc.aptitudes.AptiCompoundInt" android:screenOrientation="portrait"  />
+        <activity android:name="com.droidacid.apticalc.aptitudes.AptiLcmHcf" android:screenOrientation="portrait"  />
+        <activity android:name="com.droidacid.apticalc.aptitudes.AptiLcm" android:screenOrientation="portrait"  />
+        <activity android:name="com.droidacid.apticalc.aptitudes.AptiHcf" android:screenOrientation="portrait"  />
+        <activity android:name="com.droidacid.apticalc.aptitudes.AptiFactorial" android:screenOrientation="portrait"  />
+        <activity android:name="com.droidacid.apticalc.tipsandtricks.TnTricksNumSys" android:screenOrientation="portrait"  />
+
         <!-- Formulas Intents Code -->
-        <activity android:name="com.droidacid.apticalc.formulas.FSquaresCubesFractions" />
-        <activity android:name="com.droidacid.apticalc.formulas.FDivisibilityRule" />
-        <activity android:name="com.droidacid.apticalc.formulas.FExponents" />
-        <activity android:name="com.droidacid.apticalc.formulas.FLogarithms" />
-        <activity android:name="com.droidacid.apticalc.formulas.FProgressions" />
-        <activity android:name="com.droidacid.apticalc.formulas.FQuadratic"/>
-        <activity android:name="com.droidacid.apticalc.formulas.FProbabilityPandC" />
-        <activity android:name="com.droidacid.apticalc.formulas.FGeometry" />
-        <activity android:name="com.droidacid.apticalc.formulas.FCoordinateGeometry" />
-        <activity android:name="com.droidacid.apticalc.formulas.FTrigonometry" />
-        <activity android:name="com.droidacid.apticalc.formulas.FSquares" />
-        <activity android:name="com.droidacid.apticalc.formulas.FCubes" />
-        <activity android:name="com.droidacid.apticalc.formulas.FDecimals" />
-        <activity android:name="com.droidacid.apticalc.formulas.FProbability" />
-        <activity android:name="com.droidacid.apticalc.formulas.FBinomial" />
-        <activity android:name="com.droidacid.apticalc.formulas.FCount" />
-        <activity android:name="com.droidacid.apticalc.formulas.FGeometryFundamentals" />
-        <activity android:name="com.droidacid.apticalc.formulas.FAreasAndPerimeters" />
-        <activity android:name="com.droidacid.apticalc.formulas.FVolumeAndSurfaceAreas" />
-        <activity android:name="com.droidacid.apticalc.formulas.FCircleProperties" />
-        <activity android:name="com.droidacid.apticalc.formulas.FTriangleProperties" />
-        <activity android:name="com.droidacid.apticalc.formulas.FQuadrilateralProperties" />
-        <activity android:name="com.droidacid.apticalc.formulas.FPentagonProperties" />
-        <activity android:name="com.droidacid.apticalc.formulas.FGeometry1" />
-        <activity android:name="com.droidacid.apticalc.formulas.FGeometry2" />
-        <activity android:name="com.droidacid.apticalc.formulas.FGeometry3" />
-        <activity android:name="com.droidacid.apticalc.formulas.FGeometry4" />
-        <activity android:name="com.droidacid.apticalc.formulas.FGeometry5" />
-        <activity android:name="com.droidacid.apticalc.formulas.FAreaCircle" />
-        <activity android:name="com.droidacid.apticalc.formulas.FAreaTriangle" />
-        <activity android:name="com.droidacid.apticalc.formulas.FAreaEquilateralTriangle" />
-        <activity android:name="com.droidacid.apticalc.formulas.FAreaSquare" />
-        <activity android:name="com.droidacid.apticalc.formulas.FAreaRectangle" />
-        <activity android:name="com.droidacid.apticalc.formulas.FAreaParallogram" />
-        <activity android:name="com.droidacid.apticalc.formulas.FAreaRing" />
-        <activity android:name="com.droidacid.apticalc.formulas.FAreaSector" />
-        <activity android:name="com.droidacid.apticalc.formulas.FAreaTrapezoid" />
-        <activity android:name="com.droidacid.apticalc.formulas.FVolumeCone" />
-        <activity android:name="com.droidacid.apticalc.formulas.FVolumeCube" />
-        <activity android:name="com.droidacid.apticalc.formulas.FVolumeCylinder" />
-        <activity android:name="com.droidacid.apticalc.formulas.FVolumeFrustum" />
-        <activity android:name="com.droidacid.apticalc.formulas.FVolumePyramid" />
-        <activity android:name="com.droidacid.apticalc.formulas.FVolumeSphere" /> 
-        <activity android:name="com.droidacid.apticalc.formulas.FCircleProperties1" />
-        <activity android:name="com.droidacid.apticalc.formulas.FCircleProperties2" />
-        <activity android:name="com.droidacid.apticalc.formulas.FCircleProperties3" />
-        <activity android:name="com.droidacid.apticalc.formulas.FCircleProperties4" />
-        <activity android:name="com.droidacid.apticalc.formulas.FTriangle1ctivity" />
-        <activity android:name="com.droidacid.apticalc.formulas.FCircleProperties5" />
-        <activity android:name="com.droidacid.apticalc.formulas.FTriangle1" />
-        <activity android:name="com.droidacid.apticalc.formulas.FTriangle2" />
-        <activity android:name="com.droidacid.apticalc.formulas.FTriangle3" />
-        <activity android:name="com.droidacid.apticalc.formulas.FTriangle4" />
-        <activity android:name="com.droidacid.apticalc.formulas.FTriangle5" />
-        <activity android:name="com.droidacid.apticalc.formulas.FTriangle6" />
-        <activity android:name="com.droidacid.apticalc.formulas.FTriangle7" />
-        <activity android:name="com.droidacid.apticalc.formulas.FTriangle8" />
-        <activity android:name="com.droidacid.apticalc.formulas.FTriangle9" />
-        <activity android:name="com.droidacid.apticalc.formulas.FLineEquation" />
-        <activity android:name="com.droidacid.apticalc.formulas.FLineDistance" />
-        <activity android:name="com.droidacid.apticalc.formulas.FLineMidpoint" />
-        <activity android:name="com.droidacid.apticalc.formulas.FLineSlope" />
-        <activity android:name="com.droidacid.apticalc.formulas.FSlopeParallelLines" />
-        <activity android:name="com.droidacid.apticalc.formulas.FSlopePerpendicularLines" />
-      <!-- NEED TO FIX THIS PART, ECLIPSE FUCKED SOMETHING UP  
+        <activity android:name="com.droidacid.apticalc.formulas.FSquaresCubesFractions" android:screenOrientation="portrait" />
+        <activity android:name="com.droidacid.apticalc.formulas.FDivisibilityRule" android:screenOrientation="portrait"  />
+        <activity android:name="com.droidacid.apticalc.formulas.FExponents" android:screenOrientation="portrait"  />
+        <activity android:name="com.droidacid.apticalc.formulas.FLogarithms" android:screenOrientation="portrait"  />
+        <activity android:name="com.droidacid.apticalc.formulas.FProgressions" android:screenOrientation="portrait"  />
+        <activity android:name="com.droidacid.apticalc.formulas.FQuadratic" android:screenOrientation="portrait"  />
+        <activity android:name="com.droidacid.apticalc.formulas.FProbabilityPandC" android:screenOrientation="portrait"  />
+        <activity android:name="com.droidacid.apticalc.formulas.FGeometry" android:screenOrientation="portrait"  />
+        <activity android:name="com.droidacid.apticalc.formulas.FCoordinateGeometry" android:screenOrientation="portrait"  />
+        <activity android:name="com.droidacid.apticalc.formulas.FTrigonometry" android:screenOrientation="portrait"  />
+        <activity android:name="com.droidacid.apticalc.formulas.FSquares" android:screenOrientation="portrait"  />
+        <activity android:name="com.droidacid.apticalc.formulas.FCubes" android:screenOrientation="portrait"  />
+        <activity android:name="com.droidacid.apticalc.formulas.FDecimals" android:screenOrientation="portrait" />
+        <activity android:name="com.droidacid.apticalc.formulas.FProbability" android:screenOrientation="portrait"  />
+        <activity android:name="com.droidacid.apticalc.formulas.FBinomial" android:screenOrientation="portrait"  />
+        <activity android:name="com.droidacid.apticalc.formulas.FCount" android:screenOrientation="portrait"  />
+        <activity android:name="com.droidacid.apticalc.formulas.FGeometryFundamentals" android:screenOrientation="portrait"  />
+        <activity android:name="com.droidacid.apticalc.formulas.FAreasAndPerimeters" android:screenOrientation="portrait"  />
+        <activity android:name="com.droidacid.apticalc.formulas.FVolumeAndSurfaceAreas" android:screenOrientation="portrait"  />
+        <activity android:name="com.droidacid.apticalc.formulas.FCircleProperties" android:screenOrientation="portrait"  />
+        <activity android:name="com.droidacid.apticalc.formulas.FTriangleProperties" android:screenOrientation="portrait"  />
+        <activity android:name="com.droidacid.apticalc.formulas.FQuadrilateralProperties" android:screenOrientation="portrait"  />
+        <activity android:name="com.droidacid.apticalc.formulas.FPentagonProperties" android:screenOrientation="portrait"  />
+        <activity android:name="com.droidacid.apticalc.formulas.FGeometry1" android:screenOrientation="portrait"  />
+        <activity android:name="com.droidacid.apticalc.formulas.FGeometry2" android:screenOrientation="portrait" />
+        <activity android:name="com.droidacid.apticalc.formulas.FGeometry3" android:screenOrientation="portrait"  />
+        <activity android:name="com.droidacid.apticalc.formulas.FGeometry4" android:screenOrientation="portrait"  />
+        <activity android:name="com.droidacid.apticalc.formulas.FGeometry5" android:screenOrientation="portrait"  />
+        <activity android:name="com.droidacid.apticalc.formulas.FAreaCircle" android:screenOrientation="portrait"  />
+        <activity android:name="com.droidacid.apticalc.formulas.FAreaTriangle" android:screenOrientation="portrait"  />
+        <activity android:name="com.droidacid.apticalc.formulas.FAreaEquilateralTriangle" android:screenOrientation="portrait"  />
+        <activity android:name="com.droidacid.apticalc.formulas.FAreaSquare" android:screenOrientation="portrait"  />
+        <activity android:name="com.droidacid.apticalc.formulas.FAreaRectangle" android:screenOrientation="portrait"  />
+        <activity android:name="com.droidacid.apticalc.formulas.FAreaParallogram" android:screenOrientation="portrait"  />
+        <activity android:name="com.droidacid.apticalc.formulas.FAreaRing" android:screenOrientation="portrait"  />
+        <activity android:name="com.droidacid.apticalc.formulas.FAreaSector" android:screenOrientation="portrait"  />
+        <activity android:name="com.droidacid.apticalc.formulas.FAreaTrapezoid" android:screenOrientation="portrait"  />
+        <activity android:name="com.droidacid.apticalc.formulas.FVolumeCone" android:screenOrientation="portrait"  />
+        <activity android:name="com.droidacid.apticalc.formulas.FVolumeCube" android:screenOrientation="portrait"  />
+        <activity android:name="com.droidacid.apticalc.formulas.FVolumeCylinder" android:screenOrientation="portrait"  />
+        <activity android:name="com.droidacid.apticalc.formulas.FVolumeFrustum" android:screenOrientation="portrait"  />
+        <activity android:name="com.droidacid.apticalc.formulas.FVolumePyramid" android:screenOrientation="portrait"  />
+        <activity android:name="com.droidacid.apticalc.formulas.FVolumeSphere" android:screenOrientation="portrait"  />
+        <activity android:name="com.droidacid.apticalc.formulas.FCircleProperties1" android:screenOrientation="portrait"  />
+        <activity android:name="com.droidacid.apticalc.formulas.FCircleProperties2" android:screenOrientation="portrait"  />
+        <activity android:name="com.droidacid.apticalc.formulas.FCircleProperties3" android:screenOrientation="portrait"  />
+        <activity android:name="com.droidacid.apticalc.formulas.FCircleProperties4" android:screenOrientation="portrait" />
+        <activity android:name="com.droidacid.apticalc.formulas.FTriangle1ctivity" android:screenOrientation="portrait" />
+        <activity android:name="com.droidacid.apticalc.formulas.FCircleProperties5" android:screenOrientation="portrait" />
+        <activity android:name="com.droidacid.apticalc.formulas.FTriangle1" android:screenOrientation="portrait" />
+        <activity android:name="com.droidacid.apticalc.formulas.FTriangle2" android:screenOrientation="portrait" />
+        <activity android:name="com.droidacid.apticalc.formulas.FTriangle3" android:screenOrientation="portrait" />
+        <activity android:name="com.droidacid.apticalc.formulas.FTriangle4" android:screenOrientation="portrait" />
+        <activity android:name="com.droidacid.apticalc.formulas.FTriangle5" android:screenOrientation="portrait" />
+        <activity android:name="com.droidacid.apticalc.formulas.FTriangle6" android:screenOrientation="portrait" />
+        <activity android:name="com.droidacid.apticalc.formulas.FTriangle7" android:screenOrientation="portrait" />
+        <activity android:name="com.droidacid.apticalc.formulas.FTriangle8" android:screenOrientation="portrait" />
+        <activity android:name="com.droidacid.apticalc.formulas.FTriangle9" android:screenOrientation="portrait" />
+        <activity android:name="com.droidacid.apticalc.formulas.FLineEquation" android:screenOrientation="portrait" />
+        <activity android:name="com.droidacid.apticalc.formulas.FLineDistance" android:screenOrientation="portrait" />
+        <activity android:name="com.droidacid.apticalc.formulas.FLineMidpoint" android:screenOrientation="portrait" />
+        <activity android:name="com.droidacid.apticalc.formulas.FLineSlope" android:screenOrientation="portrait" />
+        <activity android:name="com.droidacid.apticalc.formulas.FSlopeParallelLines" android:screenOrientation="portrait" />
+        <activity android:name="com.droidacid.apticalc.formulas.FSlopePerpendicularLines" android:screenOrientation="portrait" />
+        <!--
+      NEED TO FIX THIS PART, ECLIPSE FUCKED SOMETHING UP  
       com.droidacid.apticalc.formulas.FTrigonometryCommonAnglesng/app_name" />
        com.droidacid.apticalc.formulas.FTrigonometryPeriodicFormulasd:name=".FCircleEquation"
-            android:label="@string/com.droidacid.apticalc.formulas.FTrigonometryBasics 
-      -->
-        <activity android:name="com.droidacid.apticalc.formulas.FTrigonometryBasics" />
-        <activity android:name="com.droidacid.apticalc.formulas.FTrigonometryCommonAngles" />
-        <activity android:name="com.droidacid.apticalc.formulas.FTrigonometryPeriodicFormulas" />
-        <activity android:name="com.droidacid.apticalc.formulas.FTrigonometryPythagorean" />
-        <activity android:name="com.droidacid.apticalc.formulas.FHalfAngleFormulas" />
-        
-        <!-- _____________________ More About This App __________________ -->  
-        <activity android:name="com.droidacid.apticalc.more.More" />
-        <activity android:name="com.droidacid.apticalc.more.AboutUs" />
-        <activity android:name="com.droidacid.apticalc.more.LikeUs" />
-        <activity android:name="com.droidacid.apticalc.more.Report" />
-        <activity android:name="com.droidacid.apticalc.more.Review" />
-        <activity android:name="com.droidacid.apticalc.more.Suggest" />
-        <activity android:name="com.droidacid.apticalc.more.Upgrade" />
-        
-</application>
+            android:label="@string/com.droidacid.apticalc.formulas.FTrigonometryBasics 
+        -->
+        <activity android:name="com.droidacid.apticalc.formulas.FTrigonometryBasics" android:screenOrientation="portrait" />
+        <activity android:name="com.droidacid.apticalc.formulas.FTrigonometryCommonAngles" android:screenOrientation="portrait" />
+        <activity android:name="com.droidacid.apticalc.formulas.FTrigonometryPeriodicFormulas" android:screenOrientation="portrait" />
+        <activity android:name="com.droidacid.apticalc.formulas.FTrigonometryPythagorean" android:screenOrientation="portrait" />
+        <activity android:name="com.droidacid.apticalc.formulas.FHalfAngleFormulas" android:screenOrientation="portrait" />
+
+        <!-- _____________________ More About This App __________________ -->
+        <activity android:name="com.droidacid.apticalc.more.More" android:screenOrientation="portrait" />
+        <activity android:name="com.droidacid.apticalc.more.AboutUs" android:screenOrientation="portrait" />
+        <activity android:name="com.droidacid.apticalc.more.LikeUs" android:screenOrientation="portrait" />
+        <activity android:name="com.droidacid.apticalc.more.Report" android:screenOrientation="portrait" />
+        <activity android:name="com.droidacid.apticalc.more.Review" android:screenOrientation="portrait" />
+        <activity android:name="com.droidacid.apticalc.more.Suggest" android:screenOrientation="portrait" />
+        <activity android:name="com.droidacid.apticalc.more.Upgrade" android:screenOrientation="portrait" />
+    </application>
+
 </manifest>

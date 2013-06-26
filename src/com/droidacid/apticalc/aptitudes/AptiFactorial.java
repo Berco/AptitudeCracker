@@ -2,20 +2,18 @@ package com.droidacid.apticalc.aptitudes;
 
 import android.app.Activity;
 import android.os.Bundle;
+import android.util.Log;
 import android.view.View;
 import android.widget.Button;
 import android.widget.EditText;
 import android.widget.TextView;
-
 import com.droidacid.apticalc.R;
 
 public class AptiFactorial extends Activity implements android.view.View.OnClickListener{
 	EditText number;
 	TextView answer;
 	Button calculate;
-	
 	long factorial = 1;
-	
 	@Override
 	protected void onCreate(Bundle savedInstanceState) {
 		super.onCreate(savedInstanceState);
@@ -29,20 +27,28 @@ public class AptiFactorial extends Activity implements android.view.View.OnClick
 		calculate = (Button) findViewById(R.id.b_apti_calc);
 		calculate.setOnClickListener(this);
 	}
-	private void calcFactorial() {
-		if (number.getText().toString().equals("")) number.setText("0");
-		int num = Integer.parseInt(number.getText().toString());
-		for(int i = 1; i<=num; i++){
-			factorial = i * factorial;
-		}
+	private long calcFactorial() {
+		long num = 0;
 		
+	    if (!number.getText().toString().equals(""))
+	          num = Long.parseLong(number.getText().toString());
+	    try {
+	        factorial = Long.parseLong(number.getText().toString());
+	        for(int i=(int) (factorial-1); i>0; i--){
+	            factorial = i * factorial;
+	        }
+	    } catch (NumberFormatException e) {
+	        Log.d("factorial", "Exception");
+	    } finally {}
+
+	    return factorial;
 	}
 	
 	
 	@Override
 	public void onClick(View v) {
-		calcFactorial();
-		answer.setText("Factorial of " + number.getText().toString() + " is : " + factorial);
+		
+		answer.setText("Factorial of " + number.getText().toString() + " is : " + calcFactorial());
 		
 	}
 

@@ -11,6 +11,7 @@
         android:layout_width="fill_parent"
         style="@style/ButtonStyle"
         android:padding="5dp"
+        android:visibility="invisible"
         android:text="@string/upgrade_to_pro" />
     
     <Button
@@ -32,7 +33,8 @@
         android:layout_width="match_parent"
         style="@style/ButtonStyle"
         android:padding="5dp"
-        android:text="@string/review_this_app_" />
+        android:visibility="invisible"
+        android:text="@string/rate_this_app" />
     
     <Button
         android:id="@+id/b_more_Suggestions"

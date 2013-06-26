@@ -3,6 +3,8 @@
 
     <!-- Made By Shivam Chopra ( www.droidacid.com ) -->
 
+	<string name="version">Version 1.01</string>
+
     <string name="app_name">Aptitude Cracker</string>
     <string name="action_settings">Settings</string>
     <string name="apticalc">Aptitude Calculator</string>
@@ -152,11 +154,11 @@
     <string name="timer_counter">00:00</string>
     <string name="upgrade_to_pro">Upgrade to Pro</string>
     <string name="report_a_bug">Report a bug</string>
-    <string name="review_this_app_">Review This App!</string>
+    <string name="rate_this_app">Rate This App!</string>
     <string name="like_us_on_facebook">Like us on Facebook</string>
     <string name="give_suggestions">Give Suggestions</string>
     <string name="about_this_app">About This App!</string>
-    <string name="version">Version 1.0</string>
+    
     <string name="aboutUs">Hello friends I am a Computer Science Engineer and this is my first Android App.\nI have worked day and night on this app and hope you guys will like it.\nIf you have to report and bug or have suggestions then please send me an email on \'makewaysforshivam@gmail.com\'.\nIf you have some tricks and want me to add them in my app then shoot an email on the above email address.</string>
     <string name="play_again">Play again!</string>
     <string name="enter_your_name">Enter Your Name</string>

@@ -84,6 +84,7 @@
         android:id="@+id/b_tys_HighScores"
         android:layout_width="wrap_content"
         style="@style/ButtonStyle"
+        android:visibility="invisible"
         android:layout_alignParentBottom="true"
         android:layout_centerHorizontal="true"
         android:text="@string/high_scores" />
